@@ -1,0 +1,199 @@
+.jobsbluegradient {
+  background-color: #8bbce2;
+  background-image: -webkit-linear-gradient(top, #8bbce2, #6286a1);
+  background-image: -moz-linear-gradient(top, #8bbce2, #6286a1);
+  background-image: -o-linear-gradient(top, #8bbce2, #6286a1);
+  background-image: -ms-linear-gradient(top, #8bbce2, #6286a1);
+  background-image: linear-gradient(top, #8bbce2, #6286a1);
+}
+.noborderradius {
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+}
+.jobsbluegardient {
+  background: #8bbce2;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #8bbce2 0%, #6286a1 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #8bbce2), color-stop(100%, #6286a1));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #8bbce2 0%, #6286a1 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #8bbce2 0%, #6286a1 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #8bbce2 0%, #6286a1 100%);
+  /* IE10+ */
+  background: linear-gradient(to bottom, #8bbce2 0%, #6286a1 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#8bbce2', endColorstr='#6286a1', GradientType=0);
+  /* IE6-9 */
+}
+.transparent {
+  /* IE 8 */
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  /* IE 5-7 */
+  filter: alpha(opacity=0);
+  /* Netscape */
+  -moz-opacity: 0;
+  /* Safari 1.x */
+  -khtml-opacity: 0;
+  /* Good browsers */
+  opacity: 0;
+}
+.row {
+  margin-left: 0;
+  margin-right: 0;
+}
+body {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+.nav {
+  font-size: 1.3em;
+}
+.nav a {
+  color: #999;
+}
+.nav > li > a {
+  padding: 5px 15px;
+}
+.nav > li > a:hover {
+  background-color: #8bbce2;
+  color: #fff;
+}
+.nav .active > a {
+  color: #8bbce2;
+  border-left: 2px solid #8bbce2;
+}
+.main {
+  text-align: center;
+  width: 100%;
+}
+.main .row-with-text {
+  position: relative;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+.main .section-title {
+  padding-top: 15%;
+}
+.main .section-title #title {
+  font-size: 4em;
+  color: #fff;
+}
+.main .section-title .arrow a i {
+  padding: 20px;
+  font-size: 0.5em;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+}
+.main .text {
+  padding-bottom: 30px;
+  font-weight: bolder;
+}
+@media only screen and (min-width: 768px) {
+  .main .text {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+.main .text a {
+  margin-top: 10px;
+  font-weight: 800;
+  font-size: 1.5em;
+}
+.main .text a.scroll {
+  position: absolute;
+  bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  background-image: url(../../images/arrow-half.png);
+  height: 33px;
+  width: 72px;
+}
+.main .text h1,
+.main .text h2,
+.main .text h3,
+.main .text h4,
+.main .text h5 {
+  font-weight: normal;
+  font-family: 'Roboto', sans-serif;
+  color: #808080;
+}
+.main .text h1 .hi,
+.main .text h2 .hi,
+.main .text h3 .hi,
+.main .text h4 .hi,
+.main .text h5 .hi {
+  color: #ff6a00;
+}
+.main .text h1.reverse,
+.main .text h2.reverse,
+.main .text h3.reverse,
+.main .text h4.reverse,
+.main .text h5.reverse {
+  color: #000;
+}
+.main .text h1.title,
+.main .text h2.title,
+.main .text h3.title,
+.main .text h4.title,
+.main .text h5.title {
+  color: #8bbce2;
+  font-size: 3em;
+}
+.main .text blockquote {
+  text-align: left;
+  border-left: 5px solid #E0E0E0;
+  margin: 1.5em 10px;
+  padding: 0.5em 10px;
+  quotes: "\201C" "\201D" "\2018" "\2019";
+}
+.main .text blockquote:before {
+  color: #ccc;
+  content: "\201C";
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+}
+.main .text blockquote p {
+  display: inline;
+}
+.main .text img {
+  margin-bottom: 10px;
+  border-radius: 50%;
+}
+.jobs-no {
+  background-image: url(../../images/parralax/bg-1.jpg);
+}
+.search {
+  background-image: url(../../images/parralax/bg-5.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+  color: #999;
+  text-shadow: none;
+  height: auto;
+}
+.search .searchbox {
+  padding: 200px 0;
+}
+.search .searchbox h1 {
+  color: #fff;
+  font-weight: 900;
+}
+.search .searchbox form input,
+.search .searchbox form a {
+  width: 300px;
+  height: 2.5em;
+  margin-top: .25em;
+  margin-bottom: .25em;
+}
+#content {
+  background-image: url(../../images/no-para/3.jpg);
+  background-attachment: cover;
+}

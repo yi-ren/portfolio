@@ -1,0 +1,144 @@
+.transparent {
+  background-color: #000000;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.transparent-beer {
+  background-color: #ff9700;
+  background-color: rgba(255, 151, 0, 0.4);
+}
+.transparent-pub {
+  background-color: #00c800;
+  background-color: rgba(0, 200, 0, 0.8);
+}
+.transparent-blue {
+  background-color: #2ad3ff;
+  background-color: rgba(42, 211, 255, 0.7);
+}
+.btn-group-vertical > .btn + .btn,
+.btn-group-vertical > .btn + .btn-group,
+.btn-group-vertical > .btn-group + .btn,
+.btn-group-vertical > .btn-group + .btn-group {
+  margin-left: auto;
+  margin-right: auto;
+}
+body {
+  padding-bottom: 50px;
+}
+body .fullwidth {
+  width: 100%;
+}
+.header-half.beer {
+  background-image: url(../img/beer600600.jpg);
+  background-size: cover;
+  padding-right: 0;
+  padding-left: 0;
+}
+.header-half.pub {
+  background-image: url(../img/pub600600.jpg);
+  background-size: cover;
+  padding-left: 0;
+  padding-right: 0;
+}
+.header-half .visible-xs {
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.pub .btn-group-vertical {
+  background-color: #00c800;
+  background-color: rgba(0, 200, 0, 0.8);
+  display: block;
+}
+.pub .btn-group-vertical .btn {
+  border: 3px solid #92cd00;
+  color: #92cd00;
+}
+.beer .btn-group-vertical {
+  padding: 8.69em 0;
+  background-image: url(../img/beerlogo.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 90% auto;
+  background-color: #ff9700;
+  background-color: rgba(255, 151, 0, 0.4);
+  display: block;
+}
+@media only screen and (max-width: 767px) {
+  .beer .btn-group-vertical {
+    background-image: none;
+    padding: 1em 0;
+    background-color: transparent;
+  }
+  .beer .btn-group-vertical .btn {
+    opacity: 1;
+    background-color: #000;
+  }
+}
+.beer .btn-group-vertical .btn {
+  border: 3px solid #ff9700;
+  color: #ff9700;
+}
+.pub .btn-group-vertical {
+  background-image: url(../img/publogo.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 90% auto;
+}
+@media only screen and (max-width: 767px) {
+  .pub .btn-group-vertical {
+    background-image: none;
+    padding: 3em 0;
+    background-color: transparent;
+  }
+  .pub .btn-group-vertical .btn {
+    opacity: 1;
+    background-color: #000;
+  }
+}
+.btn-group-vertical {
+  padding: 6em 0;
+  display: none;
+  height: 100%;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+.btn-group-vertical .btn {
+  width: 50%;
+  min-width: 250px;
+  opacity: 0;
+  padding: 10px;
+  border: 3px solid transparent;
+  margin: 20px auto;
+  font-size: 1.5em;
+}
+.btn-group-vertical:hover {
+  background-color: transparent;
+  background-image: none;
+}
+.btn-group-vertical:hover .btn {
+  opacity: 1;
+  background-color: #000;
+}
+.brothers-bio {
+  background-image: url(http://www.saveur.com/sites/saveur.com/files/images/2013-02/7-Mast-Brothers1-1800x1200.jpg);
+  background-size: cover;
+  background-position: center top;
+  min-height: 400px;
+  margin-top: 20px;
+  color: #fff;
+  padding: 20px;
+  font-size: 1.3em;
+}
+.brothers-bio img {
+  margin-top: 20px;
+}
+.brothers-bio p,
+.brothers-bio h1 {
+  padding: 10px;
+  background-color: #000;
+}
+.brothers-bio:hover p,
+.brothers-bio:hover h1 {
+  opacity: 0.3;
+}

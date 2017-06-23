@@ -1,0 +1,157 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="description" content="">
+<meta name="author" content="">
+<link rel="shortcut icon" href="asset/favicon.ico">
+<title>Cart</title>
+
+<!-- Bootstrap core CSS -->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/themes/flick/jquery-ui.min.css" />
+
+<!-- Custom styles for this template -->
+<link href='http://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'>
+
+<link href="css/style.css" rel="stylesheet">
+
+<!-- Just for debugging purposes. Don't actually copy this line! -->
+<!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+
+<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body id="page-cart">
+<div class="container">
+  <div class="masthead row container"> <a href="index.html"><img id="site-logo" src="img/logo.png"></a>
+    <div id="side-nav">
+      <ul class="nav navbar-header">
+        <li><span class="glyphicon glyphicon-shopping-cart"></span> Cart&nbsp;&nbsp;&nbsp;&nbsp;|</li>
+        <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-lock"></span> Log In</a>
+          <div class="dropdown-menu">
+            <form action="#" method="post" accept-charset="UTF-8">
+              <input id="user_username" placeholder="User Name" style="margin-bottom: 15px;" type="text" name="user[username]" size="30" />
+              <input id="user_password" placeholder="Password" style="margin-bottom: 15px;" type="password" name="user[password]" size="30" />
+              <input class="btn btn-info" style="clear: left; width: 100%; height: 32px; font-size: 13px;" type="submit" name="commit" value="Sign In" />
+            </form>
+          </div>
+        </li>
+        <li><span class="glyphicon glyphicon-briefcase"></span> Join</li>
+      </ul>
+    </div>
+    <ul class="nav nav-justified">
+      <li><a href="#">Men</a></li>
+      <li class="dropdown"> <a href="women.html" class="dropdown-toggle">Women</a>
+        <ul class="dropdown-menu women">
+          <li><a href="women.html">New Arrivals</a></li>
+          <li><a href="women.html">Trending</a></li>
+          <li><a href="women.html">On Sale</a></li>
+          <li><a href="women.html">Best Sellers</a></li>
+          <li><a href="women.html">Top Rated</a></li>
+          <li><a href="women.html">All</a></li>
+        </ul>
+      </li>
+      <li><a href="#">Brands</a></li>
+      <li><a href="#">Sale</a></li>
+      <li><a href="#">Father's Day</a></li>
+    </ul>
+  </div>
+  
+  <!-- Example row of columns -->
+  <div class="page-content">
+  	<h3><span class="glyphicon glyphicon-shopping-cart"></span> Cart</h3>
+    <div class="row">
+   	  <div id="cart-list">
+        	<table>
+                <thead>
+                    <tr>
+                        <th id="item">Item</th>
+                        <th id="details">Details</th>
+                        <th id="price">Price</th>
+                        <th id="quantity">Quantity</th>
+                        <th id="actions">Actions</th>
+                    </tr>
+                </thead>
+                <tbody class="cart-items">
+                    <tr>
+                        <td><img src="img/list-1.png">Oakley</td>
+                        <td>009013 Frogskin</td>
+                        <td>$130.00</td>
+                        <td><input type="number" value="1"></td>
+                        <td><span class="glyphicon glyphicon-trash" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Delete the item"></span></td>
+                        
+                    </tr>
+                    <tr>
+                        <td><img src="img/list-2.png">Tory Burch</td>
+                        <td>TY6030</td>
+                        <td>$175.00</td>
+                        <td><input type="number" value="1"></td>
+                        <td><span class="glyphicon glyphicon-trash" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Delete the item"></span></td>
+
+                    </tr>
+                    <tr>
+                        <td><img src="img/list-3.png">Ray-Ban</td>
+                        <td>RB2140 50 original wayfarer</td>
+                        <td>$174.95</td>
+                        <td><input type="number" value="1"></td>
+                        <td><span class="glyphicon glyphicon-trash" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Delete the item"></span></td>
+                    </tr>
+                    <tr>
+                        <td><img src="img/list-4.png">Ralph</td>
+                        <td>RA4004</td>
+                        <td>$124.95</td>
+                        <td><input type="number" value="1"></td>
+                        <td><span class="glyphicon glyphicon-trash" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Delete the item"></span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div id="price-summary">
+        	<table>
+            	<tbody>
+                    <tr>
+                        <td>Items Price:</td>
+                        <td class="total-price">$604.90</td>
+                    </tr>
+                    <tr>
+                        <td>Shipping:</td>
+                        <td>$0.00</td>
+                    </tr>
+                    <tr>
+                        <td>Tax:</td>
+                        <td>$0.00</td>
+                    </tr>
+                    <tr>
+                        <td>Discount:</td>
+                        <td>$0.00</td>
+                    </tr>
+                    <tr>
+                        <td>Total:</td>
+                        <td class="total-price">$604.90</td>
+                    </tr>
+                </tbody>
+            </table>
+            <a href="payment.html"s class="btn btn-lg btn-info">Guest Check Out</a>
+            or
+            <button class="btn btn-lg btn-info">Sign In</button>
+        </div>
+    </div>
+  </div>
+</div>
+<!-- /container --> 
+
+<!-- Bootstrap core JavaScript
+    ================================================== --> 
+<!-- Placed at the end of the document so the pages load faster --> 
+<script src="http://code.jquery.com/jquery-latest.min.js"></script> 
+<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script> 
+<script src="js/bootstrap.min.js"></script> 
+<script src="js/script.js"></script>
+</body>
+</html>

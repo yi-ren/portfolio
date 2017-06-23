@@ -1,0 +1,189 @@
+.transparent {
+  background-color: #000000;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.transparent-beer {
+  background-color: #ff9700;
+  background-color: rgba(255, 151, 0, 0.4);
+}
+.transparent-pub {
+  background-color: #00c800;
+  background-color: rgba(0, 200, 0, 0.8);
+}
+.transparent-blue {
+  background-color: #2ad3ff;
+  background-color: rgba(42, 211, 255, 0.7);
+}
+@media only screen and (min-width: 768px) {
+  body {
+    padding-top: 70px;
+  }
+}
+.navbar-inverse .navbar-nav > li > a {
+  color: #92cd00;
+  text-align: center;
+}
+@media only screen and (min-width: 768px) {
+  .navbar-inverse .navbar-nav > li > a {
+    line-height: 50px;
+    font-size: 1.4em;
+  }
+  .navbar-inverse .navbar-nav > li > a:hover {
+    background-color: #92cd00;
+  }
+}
+.navbar-inverse .navbar-nav > .active > a {
+  background-color: #92cd00;
+}
+.navbar-inverse .navbar-nav > .active > a:hover {
+  background-color: #92cd00;
+}
+.navbar-brand {
+  padding-top: 0;
+}
+.navbar-brand img {
+  width: 199px;
+}
+@media only screen and (max-width: 767px) {
+  .navbar-brand img {
+    width: 130px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .navbar-collapse .navbar-right {
+    margin-top: 20px;
+  }
+}
+#map_canvas {
+  height: 330px;
+}
+.jumbotron {
+  text-align: center;
+  margin-top: 30px;
+  background-image: url(../img/ourProductBackground.jpg);
+  background-position: center;
+  background-size: cover;
+  background-color: #00c800;
+  background-color: rgba(0, 200, 0, 0.8);
+}
+.jumbotron h1 {
+  display: inline-block;
+  padding: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #000000;
+  color: #92cd00;
+  transform: rotate(-2 eg);
+  -ms-transform: rotate(-2deg);
+  /* IE 9 */
+
+  -webkit-transform: rotate(-2deg);
+  /* Opera, Chrome, and Safari */
+
+}
+.menu > div .item {
+  float: left;
+  background-color: #000000;
+  background-color: rgba(0, 0, 0, 0.7);
+  margin-top: 10px;
+  background-color: #ff9700;
+}
+@media only screen and (min-width: 992px) {
+  .menu > div .item {
+    font-size: 1.3em;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .menu > div .item {
+    background-clip: content-box;
+    margin-top: 50px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .menu > div .item {
+    padding: 20px 10px;
+  }
+}
+.menu > div .item img {
+  margin-top: 20px;
+}
+@media only screen and (min-width: 768px) {
+  .menu > div .item img {
+    margin-top: -70px;
+    margin-bottom: -50px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .menu > div .item .text {
+    padding: 20px;
+  }
+}
+.menu > .salad .item {
+  background-color: #92cd00;
+}
+.menu > .wrap .item {
+  background-color: #ff9700;
+}
+@media only screen and (min-width: 768px) {
+  .menu > .wrap .item {
+    margin-top: 20px;
+  }
+}
+.menu > .wrap .item .img {
+  text-align: center;
+  vertical-align: bottom;
+}
+.menu > .wrap .item img {
+  margin-top: 0px;
+}
+.menu > .burger .item {
+  background-color: #92cd00;
+}
+@media only screen and (min-width: 768px) {
+  .menu > .burger .item {
+    margin-top: 90px;
+  }
+}
+#map_canvas {
+  height: 380px;
+}
+.loc a {
+  color: #fff;
+}
+.loc > .row {
+  overflow: hidden;
+}
+.loc > .row > [class*="col-"] {
+  margin-bottom: -99999px;
+  padding-bottom: 99999px;
+}
+.loc .text {
+  background-color: #92cd00;
+  padding: 15px 10px;
+}
+@media only screen and (max-width: 767px) {
+  .loc .text {
+    margin-top: 20px;
+  }
+}
+#footer .jumbotron {
+  box-shadow: inset 0 7px 9px -7px #000000;
+  background-image: none;
+  background-color: #222;
+  margin-bottom: 0;
+}
+#footer .btn {
+  width: 70%;
+  margin: 5px 15%;
+  background-color: #000;
+  border: 3px solid #92cd00;
+  color: #92cd00;
+}
+@media only screen and (min-width: 768px) {
+  #footer .btn {
+    width: 30%;
+    margin: 5px 10px;
+  }
+}
+
+/* This beautiful CSS-File has been crafted with LESS (lesscss.org) and compiled by simpLESS (wearekiss.com/simpless) */

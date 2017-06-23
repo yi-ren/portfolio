@@ -1,0 +1,189 @@
+@import "variables.less";
+
+body{
+	@media only screen and (min-width : 768px){
+	    padding-top: 70px;
+	}
+	
+}
+
+
+
+
+.navbar-inverse .navbar-nav>li>a{
+	@media only screen and (min-width : 768px){
+	line-height:50px;
+	font-size:1.4em;
+    
+	&:hover{ background-color: @pub; }
+	}
+	color: @pub;
+    text-align:center;
+}
+
+.navbar-inverse .navbar-nav>.active>a{
+	background-color: @pub;
+	&:hover{
+		background-color: @pub;
+
+	}
+}
+
+.navbar-brand{
+	padding-top:0;
+    img{
+        width: 199px;
+        @media only screen and (max-width : 767px){
+            width:130px;
+        }
+    }
+}
+
+.navbar-collapse .navbar-right {
+    @media only screen and (max-width : 767px) {
+        margin-top: 20px;
+    }
+}
+
+
+
+#map_canvas{
+	height: 330px;
+}
+
+.jumbotron{
+    text-align:center;
+	margin-top: 30px;
+	background-image:url(../img/ourProductBackground.jpg);
+	background-position:center;
+	background-size:cover;
+	h1{
+		display: inline-block;
+		padding: 20px;
+		margin-left:auto;
+		margin-right:auto;
+		background-color:rgb(0,0,0);
+		color: @pub;
+		transform:rotate(-2eg);
+		-ms-transform:rotate(-2deg); /* IE 9 */
+		-webkit-transform:rotate(-2deg); /* Opera, Chrome, and Safari */
+	}
+	.transparent-pub;
+}
+
+
+.menu > div .item  {
+	float:left;
+	
+    @media only screen and (min-width : 992px) {
+        font-size: 1.3em;
+    }
+
+    .transparent;
+	margin-top: 10px;
+    @media only screen and (min-width : 768px) {
+		background-clip:content-box;
+      margin-top: 50px;
+
+        }
+    @media only screen and (max-width: 767px){
+        padding: 20px 10px;
+
+        }
+
+    img {
+        margin-top:20px;
+        @media only screen and (min-width : 768px) {
+            margin-top: -70px;
+            margin-bottom: -50px;
+
+        }
+        
+    }
+
+    
+        background-color: @beer;
+    
+
+
+    .text {
+        @media only screen and (min-width : 768px) {
+            padding: 20px;
+        }
+    }
+}
+
+.menu > .salad .item {
+	background-color: @pub;
+}
+
+.menu > .wrap .item {
+	background-color: @beer;
+	@media only screen and (min-width: 768px){
+		margin-top: 20px;
+	}
+	.img{
+		text-align:center;
+		vertical-align:bottom;
+	}
+	img {
+        margin-top:0px;
+		
+	}
+}
+
+.menu > .burger .item {
+	background-color: @pub;
+	@media only screen and (min-width: 768px){
+		margin-top: 90px;
+	}
+}
+
+#map_canvas{
+    height:380px;
+}
+
+.loc{ 
+    a{
+        color:#fff;
+    }
+	&>.row {
+		overflow: hidden; 
+		&>[class*="col-"]{
+    margin-bottom: -99999px;
+    padding-bottom: 99999px;
+}
+}
+
+
+
+.text{
+    background-color: @pub;
+    padding:15px 10px;
+    @media only screen and (max-width : 767px) {
+            margin-top:20px;
+
+        }
+}
+}
+
+#footer{
+    .jumbotron{
+        box-shadow: inset 0 7px 9px -7px #000;
+        background-image: none;
+        background-color: #222;
+        margin-bottom: 0;
+    }
+    .btn{
+
+        @media only screen and (min-width: 768px){ width: 30%; margin:5px 10px;}
+	        width: 70%;
+            margin: 5px 15%;
+            background-color:#000;
+			border:3px solid @pub;
+			color: @pub;
+	}
+}
+
+
+

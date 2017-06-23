@@ -1,0 +1,175 @@
+.transparent {
+  background-color: #000000;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.transparent-beer {
+  background-color: #ff9700;
+  background-color: rgba(255, 151, 0, 0.4);
+}
+.transparent-pub {
+  background-color: #00c800;
+  background-color: rgba(0, 200, 0, 0.8);
+}
+.transparent-blue {
+  background-color: #2ad3ff;
+  background-color: rgba(42, 211, 255, 0.7);
+}
+body {
+  position: relative;
+}
+@media only screen and (min-width: 768px) {
+  body {
+    padding-top: 70px;
+  }
+}
+.navbar-inverse .navbar-nav > li > a {
+  text-align: center;
+  color: #ff9700;
+}
+@media only screen and (min-width: 768px) {
+  .navbar-inverse .navbar-nav > li > a {
+    line-height: 50px;
+    font-size: 1.4em;
+  }
+  .navbar-inverse .navbar-nav > li > a:hover {
+    background-color: #ff9700;
+  }
+}
+.navbar-inverse .navbar-nav > li.active {
+  background-color: #ff9700;
+}
+.navbar-inverse .navbar-nav > .active > a {
+  background-color: #ff9700;
+}
+.navbar-inverse .navbar-nav > .active > a:hover {
+  background-color: #ff9700;
+}
+.navbar-brand img {
+  width: 199px;
+}
+@media only screen and (max-width: 767px) {
+  .navbar-brand img {
+    width: 130px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .navbar-collapse .navbar-right {
+    margin-top: 20px;
+  }
+}
+#map_canvas {
+  height: 330px;
+}
+.jumbotron {
+  text-align: center;
+  margin-top: 30px;
+  background-image: url(../img/ourProductBackground.jpg);
+  background-position: center;
+  background-size: cover;
+  background-color: #ff9700;
+  background-color: rgba(255, 151, 0, 0.4);
+}
+.jumbotron h1 {
+  display: inline-block;
+  padding: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #000000;
+  color: #ff9700;
+  transform: rotate(-2 eg);
+  -ms-transform: rotate(-2deg);
+  /* IE 9 */
+
+  -webkit-transform: rotate(-2deg);
+  /* Opera, Chrome, and Safari */
+
+}
+.products > .beer {
+  background-color: #000000;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+@media only screen and (min-width: 992px) {
+  .products > .beer {
+    font-size: 1.3em;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .products > .beer {
+    margin-top: 50px;
+    margin-bottom: 90px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .products > .beer {
+    padding: 20px 10px;
+  }
+}
+.products > .beer img {
+  margin-top: 20px;
+}
+@media only screen and (min-width: 768px) {
+  .products > .beer img {
+    margin-top: -70px;
+    margin-bottom: -50px;
+  }
+}
+.products > .beer:nth-child(odd) {
+  background-color: #ff9700;
+}
+.products > .beer:nth-child(even) {
+  background-color: #92cd00;
+  text-align: right;
+}
+@media only screen and (min-width: 768px) {
+  .products > .beer .text {
+    padding: 20px;
+  }
+}
+#map_canvas {
+  height: 380px;
+}
+.become-distributor .text {
+  background-color: #ff9700;
+  padding: 15px 10px;
+}
+.become-distributor .text a {
+  color: #fff;
+}
+@media only screen and (max-width: 767px) {
+  .become-distributor .text {
+    margin-top: 20px;
+  }
+}
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden;
+}
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+#footer .jumbotron {
+  box-shadow: inset 0 7px 9px -7px #000000;
+  background-image: none;
+  background-color: #222;
+  margin-bottom: 0;
+}
+#footer .btn {
+  width: 70%;
+  margin: 5px 15%;
+  background-color: #000;
+  border: 3px solid #ff9700;
+  color: #ff9700;
+}
+@media only screen and (min-width: 767px) {
+  #footer .btn {
+    width: 30%;
+    margin: 5px 10px;
+  }
+}

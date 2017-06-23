@@ -1,0 +1,240 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="description" content="">
+<meta name="author" content="">
+<link rel="shortcut icon" href="asset/favicon.ico">
+
+<title>Home - Shadz</title>
+
+<!-- Bootstrap core CSS -->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/themes/flick/jquery-ui.min.css" />
+<!-- Custom styles for this template -->
+<link href='http://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'>
+
+<link href="css/style.css" rel="stylesheet">
+
+<!-- Just for debugging purposes. Don't actually copy this line! -->
+<!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+
+<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body id="page-home">
+    <div class="overlay">
+        <div class="close close-overlay"><span class="glyphicon glyphicon-remove"></span> View Site</div>
+        <div class="overlay-inner">
+            <div class="user-persona clearfix">
+                <h2>User Persona</h2>
+                    <img src="http://i.imgur.com/Z8SYwjI.png">
+                    <p>Name: Alexa</p>
+                    <p>Age: 22</p>
+                    <p>Alexa is a senior at Suffolk University in Boston. Summer is coming and she can’t find her old sunglasses. She’s heard of this website that sells them and decides to give it a try.</p>
+            </div>
+            <div class="goals">
+                <h2>Goals</h2>
+                <p>Alexa wants to ind the sunglasses that fit her needs and budget. She doesn't want to waste time but wants to make sure she gets the best option possible.</p>
+            </div>
+            <div class="scenarios">
+                <h2>Scenarios</h2>
+                <h3>Scenario 1 - Browsing the Site</h3>
+                <p>Alexa Googles the name of the site, click on the first result and opens the homepage of site.lex She doesn’t know exactly what she wants so she wants to look at what the site offers. She clicks on Women - Bestsellers.</p>
+                <img src="http://i.imgur.com/jyXY5MT.png">
+
+                <h3>Scenario 2 -  Narrowing Down the Search</h3>
+                <p>Alexa doesn’t care that much about the brand, but she does care about the price. She’s on a budget and she thinks a pair of sunglasses that are about $80 would do. So she goes to the price slider and put the range $70 - $90 down.</p>
+                <p>She sees that you can also filter by the color of the sunglasses. She thinks black goes with anything, so she chooses black.</p>
+                <p>She doesn’t know the lingos of the shapes of a pair of sunglasses, but she does know that she has an oval face. So she chooses her face shape as oval, and let the site decide what sunglasses would look good on her.</p>
+                <p>Now that there are only 4 pages of items left, she decides to sort them by price, low to high.</p>
+                <img src="http://i.imgur.com/jau9V29.png">
+
+                <h3>Scenario 3 - Comparing Between Options</h3>
+                <p>Alexa likes what the site offers, she views the details of these sunglasses one by one, she decides she wants one of the three pairs she likes, but she can’t decide which one. She uses the “compare” function, and look at which one fits her best.</p>
+                <img src="http://i.imgur.com/9djh67D.png">
+                <img src="http://i.imgur.com/0ndVs9Y.png">
+                <img src="http://i.imgur.com/nj5GwpV.png">
+                
+                <h3>Scenario 4 - Payment</h3>
+                <p>She finally decides which one to buy, so she puts the pair into her shopping cart and goes to the payment section. She fills out the shipping address, her email address, her phone number and her credit card information without registering, and finish the payment. She gets an email notification of her order number so that she can track the status of the order on the site if she wants to. The site gives her a login for her to use later on at the same time.</p>
+                <img src="http://i.imgur.com/rCqGMdA.png">
+                <img src="http://i.imgur.com/xwipYeK.png">
+
+                <h3>Scenario 5 - Review</h3>
+                <p>She receives her pair of sunglasses in just 3 days and loves it. She decides to go on the site and leaves a review. She finds the email she got 3 days ago and clicks on the review link. “It’s fabulous,” she writes. “I would recommend this website and sunglasses to any girl, they fit perfectly. 5 stars!”</p>
+                <img src="http://i.imgur.com/y0YB6zI.png">
+            </div>
+            <a class="btn btn-info btn-lg btn-block close-overlay">View Site</a>
+        </div>
+    </div>
+    <div class="container">
+        <div class="masthead row container">
+            <a href="index.html"><img id="site-logo" src="img/logo.png"></a>
+            <div id="side-nav">
+                <ul class="nav navbar-header">
+                    <li><span class="glyphicon glyphicon-shopping-cart"></span> Cart&nbsp;&nbsp;&nbsp;&nbsp;|</li>
+                    <li class ="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-lock"></span> Log In</a>
+                        <div class="dropdown-menu">
+                            <form action="#" method="post" accept-charset="UTF-8">
+                                <input id="user_username" placeholder="User Name" style="margin-bottom: 15px;" type="text" name="user[username]" size="30" />
+                                <input id="user_password" placeholder="Password" style="margin-bottom: 15px;" type="password" name="user[password]" size="30" />
+                                <input class="btn btn-info" style="clear: left; width: 100%; height: 32px; font-size: 13px;" type="submit" name="commit" value="Sign In" />
+                            </form>
+                        </div>
+                    </li>
+                    <li><span class="glyphicon glyphicon-briefcase"></span> Join</li>
+                </ul>
+            </div>
+            <ul class="nav nav-justified">
+                <li><a href="#">Men</a></li>
+                <li class="dropdown">
+                    <a href="women.html" class="dropdown-toggle">Women</a>
+                    <ul class="dropdown-menu women">
+                        <li><a href="women.html">New Arrivals</a></li>
+                        <li><a href="women.html">Trending</a></li>
+                        <li><a href="women.html">On Sale</a></li>
+                        <li><a href="women.html">Best Sellers</a></li>
+                        <li><a href="women.html">Top Rated</a></li>
+                        <li><a href="women.html">All</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Brands</a></li>
+                <li><a href="#">Sale</a></li>
+                <li><a href="#">Father's Day</a></li>
+            </ul>
+        </div>
+        <div class="page-content">
+            <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+                </ol>
+
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner">
+                    <div class="item active">
+                    <a href="women.html">
+                        <img src="asset/carousel-1.png" alt="...">
+                        </a>
+                        <div class="carousel-caption">
+                            
+                        </div>
+                    </div>
+                    <div class="item">
+                    <a href="women.html">
+                        <img src="asset/carousel-2.jpg" alt="...">
+                        </a>
+                        <div class="carousel-caption">
+                            
+                        </div>
+                    </div>
+                    <div class="item">
+                    <a href="women.html">
+                        <img src="asset/carousel-4.jpg" alt="...">
+                        </a>
+                        <div class="carousel-caption">
+                            
+                        </div>
+                    </div>
+                    <div class="item">
+                    <a href="women.html">
+                        <img src="asset/carousel-5.jpg" alt="...">
+                        </a>
+                        <div class="carousel-caption">
+                            
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Controls -->
+                <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                </a>
+                <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                </a>
+            </div>
+            <div id="home-product-list-1" class="row">
+                <div class="thumbnail">
+                    <a href="product.html"> <img src="img/glasses/1.jpg" alt="..."></a><button class="btn-sm btn btn-info quick-view" data-toggle="modal" data-target="#quick-view-modal">Quick View</button><a href="product.html">
+                        <div class="caption">
+                            <h5 class="brand-name">Ray-Ban</h5>
+                            <h5 class="price">$174.95</h5>
+                        </div>
+                    </a>
+                </div>
+                <div class="thumbnail">
+                    <a href="product.html"> <img src="img/glasses/2.jpg" alt="..."></a><button class="btn-sm btn btn-info quick-view" data-toggle="modal" data-target="#quick-view-modal">Quick View</button><a href="product.html">
+                        <div class="caption">
+                            <h5 class="brand-name">Tory Burch</h5>
+                            <h5 class="price">$175.00</h5>
+                        </div>
+                    </a>
+                </div>
+                <div class="thumbnail">
+                    <a href="product.html"> <img src="img/glasses/3.jpg" alt="..."></a><button class="btn-sm btn btn-info quick-view" data-toggle="modal" data-target="#quick-view-modal">Quick View</button><a href="product.html">
+                        <div class="caption">
+                            <h5 class="brand-name">Oakley</h5>
+                            <h5 class="price">$123.00</h5>
+                        </div>
+                    </a>
+                </div>
+                <div class="thumbnail">
+                    <a href="product.html"> <img src="img/glasses/4.jpg" alt="..."></a><button class="btn-sm btn btn-info quick-view" data-toggle="modal" data-target="#quick-view-modal">Quick View</button><a href="product.html">
+                        <div class="caption">
+                            <h5 class="brand-name">Revo</h5>
+                            <h5 class="price">$179.95</h5>
+                        </div>
+                    </a>
+                </div>
+                
+            </div>
+            <div id="home-product-list-2" class="row">
+                <div class="thumbnail">
+                    <a href="product.html"> <img class="wide" src="img/glasses/5wide.jpg" alt="..."></a><button class="btn-sm btn btn-info quick-view" data-toggle="modal" data-target="#quick-view-modal">Quick View</button><a href="product.html">
+                        <div class="caption">
+                            <h5 class="brand-name">Ralph</h5>
+                            <h5 class="price">$124.95</h5>
+                        </div>
+                    </a>
+                </div>
+                <div class="thumbnail">
+                    <a href="product.html"> <img class="wide" src="img/glasses/6wide.jpg" alt="..."></a><button class="btn-sm btn btn-info quick-view" data-toggle="modal" data-target="#quick-view-modal">Quick View</button><a href="product.html">
+                        <div class="caption">
+                            <h5 class="brand-name">Coach</h5>
+                            <h5 class="price">$158.00</h5>
+                        </div>
+                    </a>
+                </div>
+                <div class="thumbnail">
+                    <a href="product.html"> <img class="wide" src="img/glasses/7wide.jpg" alt="..."></a><button class="btn-sm btn btn-info quick-view" data-toggle="modal" data-target="#quick-view-modal">Quick View</button><a href="product.html">
+                        <div class="caption">
+                            <h5 class="brand-name">Vonzipper Goggles</h5>
+                            <h5 class="price">$140.00</h5>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- /container --> 
+
+<!-- Bootstrap core JavaScript
+    ================================================== --> 
+<!-- Placed at the end of the document so the pages load faster --> 
+<script src="http://code.jquery.com/jquery-latest.min.js"></script> 
+<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>

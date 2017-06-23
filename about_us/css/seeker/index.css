@@ -1,0 +1,281 @@
+.jobsbluegradient {
+  background-color: #8bbce2;
+  background-image: -webkit-linear-gradient(top, #8bbce2, #6286a1);
+  background-image: -moz-linear-gradient(top, #8bbce2, #6286a1);
+  background-image: -o-linear-gradient(top, #8bbce2, #6286a1);
+  background-image: -ms-linear-gradient(top, #8bbce2, #6286a1);
+  background-image: linear-gradient(top, #8bbce2, #6286a1);
+}
+.btn {
+  transition: all 0.5s ease;
+}
+.noborderradius {
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+}
+.jobsbluegardient {
+  background: #8bbce2;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #8bbce2 0%, #6286a1 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #8bbce2), color-stop(100%, #6286a1));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #8bbce2 0%, #6286a1 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #8bbce2 0%, #6286a1 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #8bbce2 0%, #6286a1 100%);
+  /* IE10+ */
+  background: linear-gradient(to bottom, #8bbce2 0%, #6286a1 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#8bbce2', endColorstr='#6286a1', GradientType=0);
+  /* IE6-9 */
+}
+.transparent {
+  /* IE 8 */
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  /* IE 5-7 */
+  filter: alpha(opacity=0);
+  /* Netscape */
+  -moz-opacity: 0;
+  /* Safari 1.x */
+  -khtml-opacity: 0;
+  /* Good browsers */
+  opacity: 0;
+}
+.row {
+  margin-left: 0;
+  margin-right: 0;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+}
+body h1,
+body h2,
+body h3,
+body h4,
+body h5 {
+  font-family: 'Roboto', sans-serif;
+}
+.nav {
+  font-size: 1.3em;
+}
+.nav a {
+  color: #999;
+}
+.nav > li > a {
+  padding: 5px 15px;
+}
+.nav > li > a:hover {
+  background-color: #8bbce2;
+  color: #fff;
+}
+.nav .active > a {
+  color: #8bbce2;
+  border-left: 2px solid #8bbce2;
+}
+.mainseeker {
+  text-align: center;
+  width: 100%;
+}
+.mainseeker .row-with-text {
+  position: relative;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+.mainseeker .section-title {
+  padding-top: 10%;
+  padding-bottom: 10%;
+  height: auto!important;
+}
+.mainseeker .section-title #title {
+  font-size: 4em;
+  color: #fff;
+  font-weight: 100;
+}
+.mainseeker .background {
+  color: #fff;
+  height: 500px;
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center top;
+  position: relative;
+  overflow: hidden;
+}
+.mainseeker .text {
+  padding-bottom: 60px;
+  font-weight: bolder;
+}
+.mainseeker .text .btn-warning {
+  padding: 10px 15px;
+  border-radius: 0;
+  background-color: #fff;
+  color: #f0ad4e;
+  border-width: 2px;
+  font-weight: normal;
+  font-size: 16px;
+}
+.mainseeker .text .btn-warning:hover {
+  color: #d58512;
+  background-color: rgba(240, 173, 78, 0.1);
+}
+@media only screen and (min-width: 768px) {
+  .mainseeker .text {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+.mainseeker .text a {
+  margin-top: 10px;
+  font-weight: 800;
+  font-size: 1.5em;
+}
+.mainseeker .text a.scroll {
+  position: absolute;
+  bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  background-image: url(../../images/arrow-half.png);
+  height: 33px;
+  width: 72px;
+}
+.mainseeker .text h1,
+.mainseeker .text h2,
+.mainseeker .text h3,
+.mainseeker .text h4,
+.mainseeker .text h5 {
+  font-weight: normal;
+  font-family: 'Roboto', sans-serif;
+  color: #808080;
+}
+.mainseeker .text h1 .hi,
+.mainseeker .text h2 .hi,
+.mainseeker .text h3 .hi,
+.mainseeker .text h4 .hi,
+.mainseeker .text h5 .hi {
+  color: #ff6a00;
+}
+.mainseeker .text h1.reverse,
+.mainseeker .text h2.reverse,
+.mainseeker .text h3.reverse,
+.mainseeker .text h4.reverse,
+.mainseeker .text h5.reverse {
+  color: #000;
+}
+.mainseeker .text h1.title,
+.mainseeker .text h2.title,
+.mainseeker .text h3.title,
+.mainseeker .text h4.title,
+.mainseeker .text h5.title {
+  color: #8bbce2;
+  font-size: 3em;
+}
+.mainseeker .text blockquote {
+  border-left: 5px solid #E0E0E0;
+  text-align: left;
+  margin: 0 10px;
+  padding: 0.5em 10px;
+  quotes: "\201C" "\201D" "\2018" "\2019";
+  font-family: 'Roboto', sans-serif;
+  font-weight: normal;
+}
+.mainseeker .text .justin,
+.mainseeker .text .miley {
+  margin-bottom: 20px;
+}
+@media only screen and (min-width: 768px) {
+  .mainseeker .text .justin,
+  .mainseeker .text .miley {
+    clear: both;
+    display: table;
+  }
+}
+.mainseeker .text .justin .btn,
+.mainseeker .text .miley .btn {
+  font-size: 1.2em;
+  font-weight: normal;
+}
+.mainseeker .text blockquote:before {
+  color: #ccc;
+  content: "\201C";
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+}
+.mainseeker .text blockquote p {
+  display: inline;
+}
+.mainseeker .text img {
+  border-radius: 50%;
+}
+.jobs-no {
+  background-image: url(../../images/parralax/bg-1.jpg);
+}
+.history {
+  background-image: url(../../images/parralax/bg-2.jpg);
+}
+#testimony .title {
+  margin-bottom: 30px;
+}
+.success-story {
+  height: 1000px;
+  background-image: url(../../images/parralax/bg-3.jpg);
+}
+.success-story .text {
+  top: 0%;
+}
+.success-story .person {
+  margin-bottom: 10px;
+}
+.success-story blockquote {
+  text-align: left;
+}
+.waiting {
+  background-image: url(../../images/parralax/bg-4.jpg);
+}
+.search {
+  background-image: url(../../images/parralax/bg-5.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+  color: #999;
+  text-shadow: none;
+  height: auto;
+  height: 100vh;
+}
+.search .btn-warning {
+  background: rgba(0, 0, 0, 0.4);
+  color: #fff;
+  border-width: 3px;
+  border-color: #fff;
+  font-weight: normal;
+  font-size: 16px;
+}
+.search .btn-warning:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #fff;
+}
+.search .searchbox {
+  padding: 200px 0;
+  padding-top: 35vh;
+}
+.search .searchbox h1 {
+  color: #fff;
+  font-weight: 100;
+  font-size: 3em;
+}
+.search .searchbox form input,
+.search .searchbox form a {
+  width: 300px;
+  height: 2.5em;
+  margin-top: .25em;
+  margin-bottom: .5em;
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+}

@@ -1,0 +1,130 @@
+.jobsbluegradient {
+  background-color: #8bbce2;
+  background-image: -webkit-linear-gradient(top, #8bbce2, #6286a1);
+  background-image: -moz-linear-gradient(top, #8bbce2, #6286a1);
+  background-image: -o-linear-gradient(top, #8bbce2, #6286a1);
+  background-image: -ms-linear-gradient(top, #8bbce2, #6286a1);
+  background-image: linear-gradient(top, #8bbce2, #6286a1);
+}
+.btn {
+  transition: all 0.2s ease-out;
+}
+.noborderradius {
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+}
+.jobsbluegardient {
+  background: #8bbce2;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #8bbce2 0%, #6286a1 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #8bbce2), color-stop(100%, #6286a1));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #8bbce2 0%, #6286a1 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #8bbce2 0%, #6286a1 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #8bbce2 0%, #6286a1 100%);
+  /* IE10+ */
+  background: linear-gradient(to bottom, #8bbce2 0%, #6286a1 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#8bbce2', endColorstr='#6286a1', GradientType=0);
+  /* IE6-9 */
+}
+.transparent {
+  /* IE 8 */
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  /* IE 5-7 */
+  filter: alpha(opacity=0);
+  /* Netscape */
+  -moz-opacity: 0;
+  /* Safari 1.x */
+  -khtml-opacity: 0;
+  /* Good browsers */
+  opacity: 0;
+}
+.row {
+  margin-left: 0;
+  margin-right: 0;
+}
+html,
+body {
+  font-family: 'Roboto', sans-serif;
+  height: 100%;
+  background-image: url(../../images/index/bg4.jpg);
+  background-position: center top;
+  background-repeat: no-repeat;
+}
+@media only screen and (min-width: 768px) {
+  html,
+  body {
+    background-size: cover;
+    background-position: center bottom;
+  }
+}
+html h1,
+body h1,
+html h2,
+body h2,
+html h3,
+body h3,
+html h4,
+body h4,
+html h5,
+body h5 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+}
+#site-nav {
+  float: left;
+  width: 100%;
+}
+.main {
+  position: relative;
+  font-size: 1.2em;
+  height: 100%;
+}
+.main .row {
+  color: #fff;
+  margin-top: 20px;
+}
+@media only screen and (min-width: 767px) {
+  .main .row {
+    height: 250px;
+    margin-top: auto;
+    margin-bottom: auto;
+    position: absolute;
+    top: 50PX;
+    left: 15px;
+    bottom: 0;
+    right: 15px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .main .text p {
+    color: #333;
+  }
+}
+.main .choose .btn {
+  background: rgba(0, 0, 0, 0.1);
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+  font-size: 20px;
+  color: #fff;
+  border-width: 2px;
+  border-color: #fff;
+  font-weight: 300;
+}
+.main .choose .btn:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+@media only screen and (max-width: 767px) {
+  .main .choose .btn {
+    background: rgba(0, 0, 0, 0.2);
+  }
+  .main .choose .btn:hover {
+    color: #333;
+  }
+}

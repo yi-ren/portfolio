@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="description" content="">
+<meta name="author" content="">
+<link rel="shortcut icon" href="asset/favicon.ico">
+<title>Review</title>
+
+<!-- Bootstrap core CSS -->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/themes/flick/jquery-ui.min.css" />
+<link rel="stylesheet" href="js/lib/jquery.raty.css">
+<link href='http://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'>
+
+<!-- Custom styles for this template -->
+<link href="css/style.css" rel="stylesheet">
+
+
+<!-- Just for debugging purposes. Don't actually copy this line! -->
+<!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+
+<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body id="page-list">
+<div class="container">
+  <div class="masthead row container"> <a href="index.html"><img id="site-logo" src="img/logo.png"></a>
+    <div id="side-nav">
+      <ul class="nav navbar-header">
+        <li><span class="glyphicon glyphicon-shopping-cart"></span> Cart&nbsp;&nbsp;&nbsp;&nbsp;|</li>
+        <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-lock"></span> Log In</a>
+          <div class="dropdown-menu">
+            <form action="[YOUR ACTION]" method="post" accept-charset="UTF-8">
+              <input id="user_username" placeholder="User Name" style="margin-bottom: 15px;" type="text" name="user[username]" size="30" />
+              <input id="user_password" placeholder="Password" style="margin-bottom: 15px;" type="password" name="user[password]" size="30" />
+              <input class="btn btn-info" style="clear: left; width: 100%; height: 32px; font-size: 13px;" type="submit" name="commit" value="Sign In" />
+            </form>
+          </div>
+        </li>
+        <li><span class="glyphicon glyphicon-briefcase"></span> Join</li>
+      </ul>
+    </div>
+    <ul class="nav nav-justified">
+      <li><a href="#">Men</a></li>
+      <li class="active dropdown"> <a href="women.html" class="dropdown-toggle">Women</a>
+        <ul class="dropdown-menu women">
+          <li><a href="women.html">New Arrivals</a></li>
+          <li><a href="women.html">Trending</a></li>
+          <li><a href="women.html">On Sale</a></li>
+          <li><a href="women.html">Best Sellers</a></li>
+          <li><a href="women.html">Top Rated</a></li>
+          <li><a href="women.html">All</a></li>
+        </ul>
+      </li>
+      <li><a href="#">Brands</a></li>
+      <li><a href="#">Sale</a></li>
+      <li><a href="#">Father's Day</a></li>
+    </ul>
+  </div>
+  
+  <!-- Example row of columns -->
+  <div class="page-content">
+    <div id="review-side-bar">
+      <div class="title">
+        <h5>Review an item in your order</h5>
+      </div>
+      <!-- end title -->
+      <div class="picker">
+        <div>
+          <div class="pic"><img src="img/list-1.png"></div>
+          <div class="summary">009013 Frogskin<br>
+            $130.00</div>
+        </div>
+        <div>
+          <div class="pic"><img src="img/list-2.png"></div>
+          <div class="summary">TY6030<br>
+            $175.00</div>
+        </div>
+        <div>
+          <div class="pic"><img src="img/list-3.png"></div>
+          <div class="summary">RB2140 wayfarer<br>
+            $174.95</div>
+        </div>
+        <div>
+          <div class="pic"><img src="img/list-4.png"></div>
+          <div class="summary">RA4004<br>
+            $124.95</div>
+        </div>
+      </div><!--picker-->
+      <div id="order-no">Order Number: 1234567</div>
+      <div>
+          <button class="btn btn-info">Contact</button>
+          <button class="btn btn-info">Return/Exange</button>
+      </div>
+    </div>
+    <!-- side-bar --> 
+    <div id="main">
+    	<div class="header">
+        	<div class="pic">
+            	<img src="img/list-product.png"/>
+            </div>
+            <div class="summary">
+            	<h3>009013 Frogskin</h3>
+                <h4>$130.00</h4>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+        <hr>
+        <div class="body">
+        	<div class="rate">
+            	<h4>Rate This Product</h4>
+            	<h5>Quality:&nbsp;&nbsp;<span class="raty"></span></h5>
+                <h5>Price:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="raty"></span></h5>
+                <h5>Style:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="raty"></span></h5>
+            </div>
+            <div style="border-left:1px solid #eee;height:150px;width:0;margin-right:10px; margin-bottom:10px"></div>
+            <div class="question">
+            	<h4>Questionaire</h4>
+                	<h5>Question 1:&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="q1" value="yes">&nbsp;&nbsp;Yes&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="q1" value="no">&nbsp;&nbsp;No
+</h5>
+                    <h5>Question 2:&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="q2" value="yes">&nbsp;&nbsp;Yes&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="q2" value="no">&nbsp;&nbsp;No</h5>
+                    <h5>Question 3:&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="q3" value="yes">&nbsp;&nbsp;Yes&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="q3" value="no">&nbsp;&nbsp;No</h5>
+            </div>
+        </div>
+        <div class="foot">
+        	<textarea id="comment" placeholder="Type in your comment here..."></textarea>
+            <button class="btn btn-lg btn-info">Submit</button>
+        </div>
+    </div>
+  </div>
+  <!-- end page-content --> 
+</div>
+<!-- /container --> 
+
+<!-- Bootstrap core JavaScript
+    ================================================== --> 
+<!-- Placed at the end of the document so the pages load faster --> 
+<script src="http://code.jquery.com/jquery-latest.min.js"></script> 
+<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script> 
+<script src="js/bootstrap.min.js"></script> 
+<script src="js/lib/jquery.raty.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>

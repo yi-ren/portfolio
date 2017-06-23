@@ -1,0 +1,631 @@
+﻿<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="cache-control" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="description" content="Find more [position name] jobs in [location] on Jobs.com">
+    <meta property="og:title" content="[company] is hiring a [position name] in [location]" />
+    <meta property="og:site_name" content="Jobs.com" />
+    <!-- <meta property="og:url" content="" />-->
+    <meta property="og:type" content="article" />
+    <meta property="og:image" content="http://aia-arizona.org/wp-content/uploads/2007/08/jobs_pic.jpg" />
+    <meta property="og:description" content="Find more [position name] jobs in [location] on Jobs.com. #HTML #CSS #JAVASCRIPT #PHOTOSHOP" />
+    <meta property="fb:app_id" content="649994265091490" />
+    <title>Jobs.com</title>
+    <!-- Bootstrap core CSS -->
+    <link href="../css/third-party/bootstrap/bootstrap-3.1.1.min.css" rel="stylesheet" />
+    <!-- site level CSS -->
+    <link rel="stylesheet" type="text/css" href="../css/shared.css" />
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,100' rel='stylesheet' type='text/css'>
+    <!-- page level CSS -->
+    <link rel="stylesheet" type="text/css" href="../css/location/index.css" />
+    <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css" />
+
+    <!-- Font Awesome core CSS (optional) -->
+    <link href="../css/third-party/font-awesome/font-awesome-4.0.3.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../css/third-party/7stroke/pe-icon-7-stroke.css">
+    <link rel="stylesheet" href="../css/third-party/7stroke/helper.css">
+    <!--[if lt IE 9]>
+        <!-- Modernizr : Used to detect HTML5 and CSS3 features available in the browser -->
+    <script src="../js/third-party/modernizer/modernizr-2.7.1.js" type="text/javascript"></script>
+    <!-- Respond : Used to enable responsive designs in browsers that do not support CSS3 Media Queries -->
+    <script src="../js/third-party/bootstrap/respond.js" type="text/javascript"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+    <nav class="navbar navbar-default" role="navigation" id="site-nav">
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#"><img src="../img/logo-small.png" /></a>
+            </div>
+        </div><!-- /.container-fluid -->
+    </nav>
+    
+    
+    <div id="main">
+        <div class="row">
+            <div id="right">
+                <div id="page-title">
+                    <h3>40,000 <a href="" data-toggle="modal" data-target="#starter-question">UX Desinger <span class="pe pe-7s-note"></span></a> Jobs In View</h3>
+                </div>
+                <div id="map-container">
+                    <div id="overview-container">
+                        <div id="overview" class="panel panel-default hidden">
+                            <div class="panel-heading">
+                                <a href="#" class="save" title="Save"><span class="glyphicon glyphicon-star-empty pull-left"></span></a>
+                                <a data-toggle="collapse" data-parent="#overview-container" href="#overview-body" id="more" title="More Info">
+                                    <span class="title"></span>
+                                    <span class="glyphicon pull-right glyphicon-chevron-up"></span>
+                                </a>
+                            </div>
+                            <div id="overview-body" class="panel-collapse collapse in">
+                                <div class="panel-body">
+                                    <p>The Cleveland metro area has <span class="label label-success">low home values</span>, <span class="label label-info">average rent costs</span>, and <span class="label label-danger">high unemployment</span> levels. Its citizens generally have <span class="label label-info">average education</span> levels and <span class="label label-info">average income</span> levels.</p>
+                                    <table class="table table-striped table-condensed">
+                                        <tbody>
+                                            <tr>
+                                                <td>Job Results</td>
+                                                <td id="results">3,000</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Average Wage</td>
+                                                <td id="average-wage">$30,000</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Median Household Income</td>
+                                                <td id="household-income">$50,000</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Cost of Living</td>
+                                                <td id="cost-of-living">Low</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Type</td>
+                                                <td id="type">Mid-size City</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Population</td>
+                                                <td id="population">396,815</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+
+                                <div class="panel-footer">
+                                    <a class="btn btn-default save">Save</a>
+                                    <a class="btn btn-default show-jobs">Show Jobs</a>
+                                </div>
+                            </div>
+                            </div>
+                    </div>
+                    <div id="map"></div>
+                </div>
+                <div id="region-selector" class="panel panel-default empty">
+                    <div class="panel-heading clearfix">
+                        <a class="btn btn-default pull-left back-to-map">< Back To Map</a> 
+                        <span class="title">Saved Cities (0)</span>
+                        <div class="pull-right">
+                            <a class="btn btn-default compare">Compare</a>
+                            <a href="http://www.jobs.com/jobs/search?q=ux+designer&where=Boston%2C+MA&lat=42.321499999999986&lon=-71.0892&gt=5" target="_blank" class="btn btn-default compare">All Jobs</a>
+                        </div>
+                    </div>
+                    <div class="panel-body">
+                        <div class="no-details">
+                            <div class="region">
+                                <div class="img-container">
+                                    <img src="http://placehold.it/150x100">
+                                    <a class="delete"><span class="glyphicon glyphicon-remove"></span></a>
+                                    <div class="buttons">
+                                        <a class="btn btn-block btn-default show-jobs">Show Jobs</a>
+                                    </div>
+                                </div>
+
+                                Boston, MA<br />
+                                <small class="badge">100</small>
+                            </div>
+                                <div class="region">
+                                    <div class="img-container">
+                                        <img src="http://placehold.it/150x100">
+                                        <a class="delete"><span class="glyphicon glyphicon-remove"></span></a>
+                                        <div class="buttons">
+                                            <a class="btn btn-block btn-default show-jobs">Show Jobs</a>
+                                        </div>
+                                    </div>
+                                    Springfield, MA<br />
+                                    <small class="badge">50</small>
+                                </div>
+                            <div class="region">
+                                <div class="img-container">
+                                    <img src="http://placehold.it/150x100">
+                                    <a class="delete"><span class="glyphicon glyphicon-remove"></span></a>
+                                    <div class="buttons">
+                                        <a class="btn btn-block btn-default show-jobs">Show Jobs</a>
+                                    </div>
+                                </div>
+
+                                Boston, MA<br />
+                                <small class="badge">100</small>
+                            </div>
+                            <div class="region">
+                                <div class="img-container">
+                                    <img src="http://placehold.it/150x100">
+                                    <a class="delete"><span class="glyphicon glyphicon-remove"></span></a>
+                                    <div class="buttons">
+                                        <a class="btn btn-block btn-default show-jobs">Show Jobs</a>
+                                    </div>
+                                </div>
+                                Springfield, MA<br />
+                                <small class="badge">50</small>
+                            </div>
+                            
+                        </div>
+                            <table class="hidden table table-hover">
+                                <tbody>
+                                    <tr>
+                                        <th>
+                                        </th>
+                                        <th class="region">
+                                            <div class="img-container">
+                                                <img src="http://placehold.it/150x100">
+                                                <a class="delete"><span class="glyphicon glyphicon-remove"></span></a>
+                                                <div class="buttons">
+                                                    <a class="btn btn-block btn-default show-jobs">Show Jobs</a>
+                                                </div>
+                                            </div>
+                                            Boston, MA<br />
+                                            <small class="badge">100</small>
+                                            
+                                            
+                                        </th>
+                                        <th class="region">
+                                            <div class="img-container">
+                                                <img src="http://placehold.it/150x100">
+                                                <a class="delete"><span class="glyphicon glyphicon-remove"></span></a>
+                                                <div class="buttons">
+                                                    <a class="btn btn-block btn-default show-jobs">Show Jobs</a>
+                                                </div>
+                                            </div>
+                                            Springfield, MA<br />
+                                            <small class="badge">50</small>
+                                        </th>
+                                        <th class="region">
+                                            <div class="img-container">
+                                                <img src="http://placehold.it/150x100">
+                                                <a class="delete"><span class="glyphicon glyphicon-remove"></span></a>
+                                                <div class="buttons">
+                                                    <a class="btn btn-block btn-default show-jobs">Show Jobs</a>
+                                                </div>
+                                            </div>
+                                            Boston, MA<br />
+                                            <small class="badge">100</small>
+
+
+                                        </th>
+                                        <th class="region">
+                                            <div class="img-container">
+                                                <img src="http://placehold.it/150x100">
+                                                <a class="delete"><span class="glyphicon glyphicon-remove"></span></a>
+                                                <div class="buttons">
+                                                    <a class="btn btn-block btn-default show-jobs">Show Jobs</a>
+                                                </div>
+                                            </div>
+                                            Springfield, MA<br />
+                                            <small class="badge">50</small>
+                                        </th>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Average Wage
+                                        </td>
+                                        <td>
+                                            $30,000
+                                        </td>
+                                        <td>
+                                            $12,000
+                                        </td>
+                                        <td>
+                                            $30,000
+                                        </td>
+                                        <td>
+                                            $12,000
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Median Household Income
+                                        </td>
+                                        <td>
+                                            $50,000
+                                        </td>
+                                        <td>
+                                            $10,000
+                                        </td>
+                                        <td>
+                                            $50,000
+                                        </td>
+                                        <td>
+                                            $10,000
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Cost of Living
+                                        </td>
+                                        <td>
+                                            Low
+                                        </td>
+                                        <td>
+                                            Low
+                                        </td>
+                                        <td>
+                                            Low
+                                        </td>
+                                        <td>
+                                            Low
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Type</td>
+                                        <td>Mid-size City</td>
+                                        <td>Mid-size City</td>
+                                        <td>Mid-size City</td>
+                                        <td>Mid-size City</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Population</td>
+                                        <td>123,123</td>
+                                        <td>100,000</td>
+                                        <td>123,123</td>
+                                        <td>100,000</td>
+                                    </tr>
+                                    
+                                    
+                                </tbody>
+                            </table>
+                   </div>
+                </div>
+                <!--
+                <div id="titles-compare">
+                    <a class="close"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></a>
+                    <h4 class="title"><i class="pe-7s-map-marker pe-lg"></i> Ohio, US</h4>
+                    <div class="table-container-outer">
+                        <div class="table-container-inner">
+                            <table class="table table-hover">
+                                <thead>
+                                    <tr>
+                                        <th class="category empty"></th>
+                                        <th class="baseline">Average Resident</th>
+                                        <th><a class="show-jobs" href="#">Customer Service Rep.</a></th>
+                                        <th><a class="show-jobs" href="#">Retail Sales Asso.</a></th>
+                                        <th><a class="show-jobs" href="#">Office Manager</a></th>
+                                        <th><a class="show-jobs" href="#">Administrative Assistant</a></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="category">Job Results</td>
+                                        <td class="baseline"> - </td>
+                                        <td>124</td>
+                                        <td>100</td>
+                                        <td>95</td>
+                                        <td>25</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="category">Average Salary</td>
+                                        <td class="baseline">$99,000</td>
+                                        <td>$123,000</td>
+                                        <td>$123,000</td>
+                                        <td>$123,000</td>
+                                        <td>$123,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="category">Median Salary</td>
+                                        <td class="baseline">$23,000</td>
+                                        <td>$123,000</td>
+                                        <td>$123,000</td>
+                                        <td>$123,000</td>
+                                        <td>$123,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="category">Average Education</td>
+                                        <td class="baseline" nowrap>Middle School</td>
+                                        <td>High School</td>
+                                        <td>Bachelor's</td>
+                                        <td>Master's</td>
+                                        <td>High School</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="category" nowrap>Career Outlook</td>
+                                        <td class="baseline">Bad</td>
+                                        <td>Good</td>
+                                        <td>Good</td>
+                                        <td>Average</td>
+                                        <td>Bad</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="category" nowrap>Life / Work Balance</td>
+                                        <td class="baseline">Terrible</td>
+                                        <td>Good</td>
+                                        <td>Good</td>
+                                        <td>Average</td>
+                                        <td>Bad</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="category" nowrap id="popular-skills">Most Popular Skills</td>
+                                        <td class="baseline"><span class="label label-success">Eating</span></td>
+                                        <td><span class="label label-success">Possessed Skill</span> <span class="label label-success">Possessed Skill</span> <span class="label label-default">Lacked Skill</span> <span class="label label-default">Lacked Skill</span></td>
+                                        <td><span class="label label-success">Possessed Skill</span> <span class="label label-success">Possessed Skill</span> <span class="label label-default">Lacked Skill</span> <span class="label label-default">Lacked Skill</span></td>
+                                        <td><span class="label label-success">Possessed Skill</span> <span class="label label-success">Possessed Skill</span> <span class="label label-default">Lacked Skill</span> <span class="label label-default">Lacked Skill</span></td>
+                                        <td><span class="label label-success">Possessed Skill</span> <span class="label label-success">Possessed Skill</span> <span class="label label-default">Lacked Skill</span> <span class="label label-default">Lacked Skill</span></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                -->
+            </div>
+            <!--
+            <div id="filters" class="col-md-3 col-md-pull-9">
+                <div class="titles">
+                        <div class="title clearfix">
+                            <h4 class="pull-left">Titles</h4>
+                        </div>
+                    <div class="control">
+                            <form>
+                                <div class="form-group">
+                                    <div class="radio clearfix">
+                                        <label>
+                                            <input type="radio" value="" name="title-options">
+                                            Customer Representatives
+                                            <span class="badge pull-right">124</span>
+                                        </label>
+                                    </div>
+                                    <div class="radio clearfix">
+                                        <label>
+                                            <input type="radio" value="" name="title-options">
+                                            Retail Sales Associates
+                                            <span class="badge pull-right">100</span>
+                                        </label>
+                                    </div>
+                                    <div class="radio clearfix">
+                                        <label>
+                                            <input type="radio" value="" name="title-options">
+                                            Office Managers
+                                            <span class="badge pull-right">95</span>
+                                        </label>
+                                    </div>
+                                    <div class="radio clearfix">
+                                        <label>
+                                            <input type="radio" value="" name="title-options">
+                                            Administrative Assistants
+                                            <span class="badge pull-right">25</span>
+                                        </label>
+                                    </div>
+                                    <div class="radio clearfix">
+                                        <label>
+                                            <input type="radio" value="" name="title-options">
+                                            Cashiers
+                                            <span class="badge pull-right">10</span>
+                                        </label>
+                                    </div>
+                                    <div class="radio clearfix">
+                                        <label>
+                                            <input type="radio" value="" name="title-options">
+                                            Customer Service Representatives
+                                            <span class="badge pull-right">9</span>
+                                        </label>
+                                    </div>
+                                    <div class="radio clearfix">
+                                        <label>
+                                            <input type="radio" value="" name="title-options">
+                                            Retail Sales Associates
+                                            <span class="badge pull-right">8</span>
+                                        </label>
+                                    </div>
+                                    <div class="radio clearfix">
+                                        <label>
+                                            <input type="radio" value="" name="title-options">
+                                            Office Managers
+                                            <span class="badge pull-right">7</span>
+                                        </label>
+                                    </div>
+                                    <div class="radio clearfix">
+                                        <label>
+                                            <input type="radio" value="" name="title-options">
+                                            Administrative Assistants
+                                            <span class="badge pull-right">6</span>
+                                        </label>
+                                    </div>
+                                    <div class="radio clearfix">
+                                        <label>
+                                            <input type="radio" value="" name="title-options">
+                                            Cashiers
+                                            <span class="badge pull-right">1</span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </form>
+                        <a class="btn btn-default">Compare Titles</a>
+                        <a class="btn btn-default">More Titles</a>
+                    </div>
+                </div>
+                
+                <div class="panel-group" id="accordion">
+                    <h4><i class="pe pe-7s-user pe-lg"></i> About Me</h4>
+                    <div class="panel panel-default skills">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+                                    Skills
+                                    <span class="badge pull-right">4</span>
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseTwo" class="panel-collapse collapse in">
+                            <div class="panel-body">
+                                <h5>My Skills</h5>
+                                <p>
+                                    <span class="label label-info">Customer Service <i class="pe-7s-close-circle"></i></span>
+                                    <span class="label label-info">Retail Sales <i class="pe-7s-close-circle"></i></span>
+                                    <span class="label label-info">Office Managing <i class="pe-7s-close-circle"></i></span>
+                                    <span class="label label-info">Administration <i class="pe-7s-close-circle"></i></span>
+                                </p>
+                                <h5>Do you have these skills too?</h5>
+                                <form>
+                                    <div class="form-group">
+                                        <div class="checkbox">
+                                            <label>
+                                                <input type="checkbox" value="">
+                                                Related Skill 1
+                                            </label>
+                                        </div>
+                                        <div class="checkbox">
+                                            <label>
+                                                <input type="checkbox" value="">
+                                                Related Skill 2
+                                            </label>
+                                        </div>
+                                        <div class="checkbox">
+                                            <label>
+                                                <input type="checkbox" value="">
+                                                Related Skill 3
+                                            </label>
+                                        </div>
+                                        <div class="checkbox">
+                                            <label>
+                                                <input type="checkbox" value="">
+                                                Related Skill 4
+                                            </label>
+                                        </div>
+                                        <div class="checkbox">
+                                            <label>
+                                                <input type="checkbox" value="">
+                                                Related Skill 5
+                                            </label>
+                                        </div>
+                                    </div>
+                                </form>
+                                <div class="btn-group btn-group-justified">
+                                    <a class="btn btn-default">< Previous 5</a> <a class="btn btn-default">Next 5 ></a>
+                                </div>
+                                <a class="btn btn-default btn-block">Full List</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default industry">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+                                    Industry
+                                    <span class="badge pull-right">4</span>
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseThree" class="panel-collapse collapse in">
+                            <div class="panel-body">
+                                <h5>Desired Industry</h5>
+                                <p>
+                                    <span class="label label-info">Agriculture <i class="pe-7s-close-circle"></i></span>
+                                    <span class="label label-info">Cosmetics <i class="pe-7s-close-circle"></i></span>
+                                    <span class="label label-info">Manufacturing <i class="pe-7s-close-circle"></i></span>
+                                    <span class="label label-info">Telecommunications <i class="pe-7s-close-circle"></i></span>
+                                </p>
+                                <h5>Recommended Industries</h5>
+                                <form>
+                                    <div class="form-group">
+                                        <div class="checkbox">
+                                            <label>
+                                                <input type="checkbox" value="">
+                                                Related Industry 1
+                                            </label>
+                                        </div>
+                                        <div class="checkbox">
+                                            <label>
+                                                <input type="checkbox" value="">
+                                                Related Industry 2
+                                            </label>
+                                        </div>
+                                        <div class="checkbox">
+                                            <label>
+                                                <input type="checkbox" value="">
+                                                Related Industry 3
+                                            </label>
+                                        </div>
+                                        <div class="checkbox">
+                                            <label>
+                                                <input type="checkbox" value="">
+                                                Related Industry 4
+                                            </label>
+                                        </div>
+                                        <div class="checkbox">
+                                            <label>
+                                                <input type="checkbox" value="">
+                                                Related Industry 5
+                                            </label>
+                                        </div>
+                                    </div>
+                                </form>
+                                <div class="btn-group btn-group-justified">
+                                    <a class="btn btn-default">< Previous 5</a> <a class="btn btn-default">Next 5 ></a>
+                                </div>
+                                <a class="btn btn-default btn-block">Full List</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                -->
+            <div class="modal fade" id="starter-question" data-show="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h4 class="modal-title">Find The Best Places to Work</h4>
+                        </div>
+                        <div class="modal-body">
+                            
+                            <form class="form-inline" role="form">
+                                <div class="form-group">
+                                    <label class="sr-only" for="exampleInputEmail2">Job Title:</label>
+                                    <input type="text" class="form-control" id="exampleInputEmail2" placeholder="Enter Job Title">
+                                    <button type="submit" class="btn btn-info" data-dismiss="modal">Explore</button>
+                                </div>
+                                
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <p>Not sure? Try our <a href="#">Occupation Explorer</a> .</p>
+                        </div>
+                    </div><!-- /.modal-content -->
+                </div><!-- /.modal-dialog -->
+            </div><!-- /.modal -->
+        </div>
+    </div>
+        <!--
+            ** DO NOT ADD JAVASCRIPT FILES HERE.
+            ** All javascript files must be imported using Require.js
+            ** Approved javascript libraries will be added to the common.js file
+         -->
+        <script src="../js/require.js" type="text/javascript"></script>
+        <script type="text/javascript">
+            require(["../js/third-party/monster/common"], function () {
+                // This is the only line in this block of javascript that you need to change
+                // Here load the javascript file that this page depends on.
+                // If no page level javascript is needed, you do not need to have this require here
+                require(["http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js", "../js/location/states.js", "../js/location/index.js", "../js/location/MA_cities.js"]);
+            });
+        </script>
+</body>
+
+</html> 

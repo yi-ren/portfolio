@@ -1,0 +1,450 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="description" content="">
+<meta name="author" content="">
+<link rel="shortcut icon" href="asset/favicon.ico">
+<title>Women</title>
+
+<!-- Bootstrap core CSS -->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/themes/flick/jquery-ui.min.css" />
+<link href='http://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'>
+
+<!-- Custom styles for this template -->
+<link href="css/style.css" rel="stylesheet">
+
+<!-- Just for debugging purposes. Don't actually copy this line! -->
+<!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+
+<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body id="page-list">
+<div class="container">
+  <div class="masthead row container"> <a href="index.html"><img id="site-logo" src="img/logo.png"></a>
+    <div id="side-nav">
+      <ul class="nav navbar-header">
+        <li><span class="glyphicon glyphicon-shopping-cart"></span> Cart&nbsp;&nbsp;&nbsp;&nbsp;|</li>
+        <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-lock"></span> Log In</a>
+          <div class="dropdown-menu">
+            <form action="#" method="post" accept-charset="UTF-8">
+              <input id="user_username" placeholder="User Name" style="margin-bottom: 15px;" type="text" name="user[username]" size="30" />
+              <input id="user_password" placeholder="Password" style="margin-bottom: 15px;" type="password" name="user[password]" size="30" />
+              <input class="btn btn-info" style="clear: left; width: 100%; height: 32px; font-size: 13px;" type="submit" name="commit" value="Sign In" />
+            </form>
+          </div>
+        </li>
+        <li><span class="glyphicon glyphicon-briefcase"></span> Join</li>
+      </ul>
+    </div>
+    <ul class="nav nav-justified">
+      <li><a href="#">Men</a></li>
+      <li class="active dropdown"> <a href="women.html" class="dropdown-toggle">Women</a>
+        <ul class="dropdown-menu women">
+          <li><a href="women.html">New Arrivals</a></li>
+          <li><a href="women.html">Trending</a></li>
+          <li><a href="women.html">On Sale</a></li>
+          <li><a href="women.html">Best Sellers</a></li>
+          <li><a href="women.html">Top Rated</a></li>
+          <li><a href="women.html">All</a></li>
+        </ul>
+      </li>
+      <li><a href="#">Brands</a></li>
+      <li><a href="#">Sale</a></li>
+      <li><a href="#">Father's Day</a></li>
+    </ul>
+  </div>
+  
+  <!-- Example row of columns -->
+  <div class="page-content">
+    <div id="side-bar">
+      <div id="compare">
+        <div class="title">
+          <h5>Compare&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="glyphicon glyphicon-question-sign" data-toggle="tooltip" data-placement="bottom" title="Drag and drop items in this area to compare." id="compare-question"></span></h5>
+        </div>
+        <div class="place-holder-container">
+          <div class="place-holder"><span class="position-target"></span></div>
+          <span class="glyphicon-remove glyphicon" id="remove-1" data-removeIndex="1"></span>
+          <div class="place-holder"><span class="position-target"></span></div>
+          <span class="glyphicon-remove glyphicon" id="remove-2" data-removeIndex="2"></span>
+          <div class="place-holder"><span class="position-target"></span></div>
+          <span class="glyphicon-remove glyphicon" id="remove-3" data-removeIndex="3"></span>
+          <div class="place-holder"><span class="position-target"></span></div>
+          <span class="glyphicon-remove glyphicon" id="remove-4" data-removeIndex="4"></span> </div>
+        <button class="btn btn-sm btn-default" id="compare-button" data-toggle="modal" data-target="#compare-popup">Compare</button>
+      </div>
+      <div id="filter">
+        <div class="title">
+          <h5>Filter</h5>
+        </div>
+        <div class="controls">
+          <p>
+          <h5 id="price-range"><span class="glyphicon glyphicon-usd"></span> Price range: </h5>
+          <input type="text" id="amount" style="border:0; color:#9BE7FE; font-weight:bold; width: 100px">
+          </p>
+          <div id="slider-range"></div>
+          <h5><span class="glyphicon glyphicon-tag"></span> Brands</h5>
+          <form id="brand-list">
+            <input type="checkbox" name="" value="brand1" checked>
+            Arnette<br>
+            <input type="checkbox" name="" value="brand3" checked>
+            Burberry<br>
+            <input type="checkbox" name="" value="brand4" checked>
+            BVLGARI<br>
+            <input type="checkbox" name="" value="brand5" checked>
+            Coach<br>
+            <input type="checkbox" name="" value="brand6" checked>
+            Dolce &amp; Gabbana<br>
+            <input type="checkbox" name="" value="brand7" checked>
+            Gucci<br>
+            <input type="checkbox" name="" value="brand8" checked>
+            Guess<br>
+            <input type="checkbox" name="" value="brand9" checked>
+            Versace<br>
+            <input type="checkbox" name="" value="brand1" checked>
+            Arnette<br>
+            <input type="checkbox" name="" value="brand3" checked>
+            Burberry<br>
+            <input type="checkbox" name="" value="brand4" checked>
+            BVLGARI<br>
+            <input type="checkbox" name="" value="brand5" checked>
+            Coach<br>
+            <input type="checkbox" name="" value="brand6" checked>
+            Dolce &amp; Gabbana<br>
+            <input type="checkbox" name="" value="brand7" checked>
+            Gucci<br>
+            <input type="checkbox" name="" value="brand8" checked>
+            Guess<br>
+            <input type="checkbox" name="" value="brand9" checked>
+            Versace<br>
+          </form>
+          <h5><span class="glyphicon glyphicon-eye-open"></span> Styles</h5>
+          <form id="brand-list">
+            <input type="checkbox" name="" value="brand1" checked>
+            Aviator/Pilot<br>
+            <input type="checkbox" name="" value="brand3" checked>
+            Butterfly<br>
+            <input type="checkbox" name="" value="brand4" checked>
+            Cat Eye<br>
+            <input type="checkbox" name="" value="brand5" checked>
+            Goggle<br>
+            <input type="checkbox" name="" value="brand6" checked>
+            Oval<br>
+            <input type="checkbox" name="" value="brand7" checked>
+            Rectangle<br>
+            <input type="checkbox" name="" value="brand8" checked>
+            Rimless<br>
+            <input type="checkbox" name="" value="brand9" checked>
+            Round<br>
+            <input type="checkbox" name="" value="brand1" checked>
+            Aviator/Pilot<br>
+            <input type="checkbox" name="" value="brand3" checked>
+            Butterfly<br>
+            <input type="checkbox" name="" value="brand4" checked>
+            Cat Eye<br>
+            <input type="checkbox" name="" value="brand5" checked>
+            Goggle<br>
+            <input type="checkbox" name="" value="brand6" checked>
+            Oval<br>
+            <input type="checkbox" name="" value="brand7" checked>
+            Rectangle<br>
+            <input type="checkbox" name="" value="brand8" checked>
+            Rimless<br>
+            <input type="checkbox" name="" value="brand9" checked>
+            Round<br>
+          </form>
+          <h5><span class="glyphicon glyphicon-adjust"></span> Colors</h5>
+          <h6>Frame</h6>
+          <div class="color-palette">
+            <div class="red"></div>
+            <div class="orange"></div>
+            <div class="yellow"></div>
+            <div class="green"></div>
+            <div class="cyan"></div>
+            <div class="blue"></div>
+            <div class="purple"></div>
+          </div>
+          <h6>Lens</h6>
+          <div class="color-palette">
+            <div class="red"></div>
+            <div class="orange"></div>
+            <div class="yellow"></div>
+            <div class="green"></div>
+            <div class="cyan"></div>
+            <div class="blue"></div>
+            <div class="purple"></div>
+          </div>
+          <h5><span class="glyphicon glyphicon-pencil"></span> Keywords</h5>
+          <div class="input-group">
+            <input type="text" class="form-control" placeholder="Driving, Summer...">
+            <span class="input-group-btn">
+            <button class="btn btn-default" type="button">Go</button>
+            </span> </div>
+        </div>
+      </div>
+    </div>
+    <div id="main">
+      <div id="sort" class="row">Sort By:
+        <div class="dropdown sort">
+          <button class="btn btn-default btn-sm dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown"> Prince - Low to High <span class="caret"></span> </button>
+          <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Price - Low to High</a></li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Price - High to Low</a></li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Better Reviewed</a></li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">New Arrivals</a></li>
+          </ul>
+        </div>
+      </div>
+      <div id="item-list" class="row">
+        <div class="thumbnail"><a href="product.html"> <img src="img/glasses/1.jpg" alt="..."></a>
+          <button class="btn-sm btn btn-info quick-view" data-toggle="modal" data-target="#quick-view-modal">Quick View</button>
+          <a href="product.html">
+          <div class="caption">
+            <h5 class="brand-name">Ray-Ban</h5>
+            <h5 class="price">$174.95</h5>
+          </div>
+          </a> </div>
+        <div class="thumbnail"><a href="product.html"> <img src="img/glasses/2.jpg" alt="..."></a>
+          <button class="btn-sm btn btn-info quick-view" data-toggle="modal" data-target="#quick-view-modal">Quick View</button>
+          <a href="product.html">
+          <div class="caption">
+            <h5 class="brand-name">Tory Burch</h5>
+            <h5 class="price">$175.00</h5>
+          </div>
+          </a> </div>
+        <div class="thumbnail"><a href="product.html"> <img src="img/glasses/3.jpg" alt="..."></a>
+          <button class="btn-sm btn btn-info quick-view" data-toggle="modal" data-target="#quick-view-modal">Quick View</button>
+          <a href="product.html">
+          <div class="caption">
+            <h5 class="brand-name">Oakley</h5>
+            <h5 class="price">$130.00</h5>
+          </div>
+          </a> </div>
+        <div class="thumbnail"><a href="product.html"> <img src="img/glasses/4.jpg" alt="..."></a>
+          <button class="btn-sm btn btn-info quick-view" data-toggle="modal" data-target="#quick-view-modal">Quick View</button>
+          <a href="product.html">
+          <div class="caption">
+            <h5 class="brand-name">Revo</h5>
+            <h5 class="price">$179.95</h5>
+          </div>
+          </a> </div>
+        <div class="thumbnail"><a href="product.html"> <img src="img/glasses/5.jpg" alt="..."></a>
+          <button class="btn-sm btn btn-info quick-view" data-toggle="modal" data-target="#quick-view-modal">Quick View</button>
+          <a href="product.html">
+          <div class="caption">
+            <h5 class="brand-name">Ralph</h5>
+            <h5 class="price">$124.95</h5>
+          </div>
+          </a> </div>
+        <div class="thumbnail"><a href="product.html"> <img src="img/glasses/6.jpg" alt="..."></a>
+          <button class="btn-sm btn btn-info quick-view" data-toggle="modal" data-target="#quick-view-modal">Quick View</button>
+          <a href="product.html">
+          <div class="caption">
+            <h5 class="brand-name">Coach</h5>
+            <h5 class="price">$158.00</h5>
+          </div>
+          </a> </div>
+        <div class="thumbnail"><a href="product.html"> <img src="img/glasses/7.jpg" alt="..."></a>
+          <button class="btn-sm btn btn-info quick-view" data-toggle="modal" data-target="#quick-view-modal">Quick View</button>
+          <a href="product.html">
+          <div class="caption">
+            <h5 class="brand-name">Vonzipper Goggles</h5>
+            <h5 class="price">$140.00</h5>
+          </div>
+          </a> </div>
+          <div class="thumbnail">
+              <a href="product.html"> <img src="img/glasses/1.jpg" alt="..."></a>
+              <button class="btn-sm btn btn-info quick-view" data-toggle="modal" data-target="#quick-view-modal">Quick View</button>
+              <a href="product.html">
+                  <div class="caption">
+                      <h5 class="brand-name">Ray-Ban</h5>
+                      <h5 class="price">$174.95</h5>
+                  </div>
+              </a>
+          </div>
+          <div class="thumbnail">
+              <a href="product.html"> <img src="img/glasses/2.jpg" alt="..."></a>
+              <button class="btn-sm btn btn-info quick-view" data-toggle="modal" data-target="#quick-view-modal">Quick View</button>
+              <a href="product.html">
+                  <div class="caption">
+                      <h5 class="brand-name">Tory Burch</h5>
+                      <h5 class="price">$175.00</h5>
+                  </div>
+              </a>
+          </div>
+          <div class="thumbnail">
+              <a href="product.html"> <img src="img/glasses/3.jpg" alt="..."></a>
+              <button class="btn-sm btn btn-info quick-view" data-toggle="modal" data-target="#quick-view-modal">Quick View</button>
+              <a href="product.html">
+                  <div class="caption">
+                      <h5 class="brand-name">Oakley</h5>
+                      <h5 class="price">$130.00</h5>
+                  </div>
+              </a>
+          </div>
+          <div class="thumbnail">
+              <a href="product.html"> <img src="img/glasses/4.jpg" alt="..."></a>
+              <button class="btn-sm btn btn-info quick-view" data-toggle="modal" data-target="#quick-view-modal">Quick View</button>
+              <a href="product.html">
+                  <div class="caption">
+                      <h5 class="brand-name">Revo</h5>
+                      <h5 class="price">$179.95</h5>
+                  </div>
+              </a>
+          </div>
+          <div class="thumbnail">
+              <a href="product.html"> <img src="img/glasses/5.jpg" alt="..."></a>
+              <button class="btn-sm btn btn-info quick-view" data-toggle="modal" data-target="#quick-view-modal">Quick View</button>
+              <a href="product.html">
+                  <div class="caption">
+                      <h5 class="brand-name">Ralph</h5>
+                      <h5 class="price">$124.95</h5>
+                  </div>
+              </a>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- 
+      <div class="footer">
+        <p>&copy; Company 2014</p>
+      </div>
+      Site footer -->
+
+<!-- /container --> 
+
+<!-- Bootstrap core JavaScript
+    ================================================== --> 
+<!-- Placed at the end of the document so the pages load faster --> 
+<script src="http://code.jquery.com/jquery-latest.min.js"></script> 
+<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script> 
+<script src="js/bootstrap.min.js"></script> 
+<script src="js/script.js"></script>
+<div class="modal fade" id="quick-view-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title" id="myModalLabel">Quick View</h4>
+      </div>
+      <div class="modal-body">
+          <div id="product-pic-container">
+              <div id="main-pic">
+                  <img class="sec-pic" src="img/main-product-2.png" />
+                  <img class="first-pic" src="img/main-product.png" />
+              </div>
+              <div id="pic-picker">
+                  <img class="first-pic active" src="img/product-small-1.png" />
+                  <img class="sec-pic inactive" src="img/product-small-2.png" />
+              </div>
+          </div>
+        <div id="product-info">
+          <div id="description">
+            <h3 id="brand">Oakley</h3>
+            <h3 id="price">$130.00</h3>
+            <div class="clearfix"></div>
+            <h4>Square</h4>
+            <div id="stars"> <span class="glyphicon glyphicon-star"></span> <span class="glyphicon glyphicon-star"></span> <span class="glyphicon glyphicon-star"></span> <span class="glyphicon glyphicon-star"></span> <span class="glyphicon glyphicon-star-empty"></span>
+              <div id="review-counts">(268 Reviews)</div>
+            </div>
+            <a href="product.html">View Details ></a> </div>
+          <div id="control">
+            <div id="color-picker"> 2 Colors Available<br>
+              <div class="blue"></div>
+              <div class="purple"></div>
+            </div>
+            <div id="number-picker">
+              <label id="quantity-lable" for="quantity">Quantity</label>
+              <br>
+              <input id="quantity" name="quantity" type="number" value="1">
+            </div>
+            <div id="buy-button">
+              <button class="btn btn-lg btn-info"><span class="glyphicon glyphicon-shopping-cart"></span> Add To Cart</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="modal fade" id="compare-popup" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title" id="compare-popup-title">Compare</h4>
+      </div>
+      <div class="modal-body">
+        <table>
+          <thead>
+            <tr>
+              <th>Product</th>
+              <th><img src="img/list-1.png"/></th>
+              <th><img src="img/list-2.png"/></th>
+              <th><img src="img/list-3.png"/></th>
+              <th><img src="img/list-4.png"/></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Reviews</td>
+                <td class="text-success"><strong>4.9 </strong><span class="glyphicon glyphicon-star"></span></td>
+              <td>4.6 <span class="glyphicon glyphicon-star"></span></td>
+                <td class="text-danger"><strong>2.3 </strong><span class="glyphicon glyphicon-star"></span></td>
+                <td>3.6 <span class="glyphicon glyphicon-star"></span></td>
+            </tr>
+            <tr>
+              <td>Price</td>
+              <td>$130.00</td>
+              <td class="text-danger"><strong>$275.00</strong></td>
+              <td>$174.95</td>
+              <td class="text-success"><strong>$124.95</strong></td>
+            </tr>
+            <tr>
+              <td>Band</td>
+              <td>Oakley</td>
+              <td>Tory Burch</td>
+              <td>Ray-Ban</td>
+              <td>Ralph</td>
+            </tr>
+            <tr>
+              <td>Face Shape</td>
+              <td>Square</td>
+              <td>Heart</td>
+              <td>Square</td>
+              <td>Square/Heart</td>
+            </tr>
+            <tr>
+              <td>Color</td>
+              <td>Blue</td>
+              <td>Green</td>
+              <td>Blue</td>
+              <td>Golden</td>
+            </tr>
+            <tr>
+              <td>Style</td>
+              <td>Butteryfly</td>
+              <td>Butterfly/Rimless</td>
+              <td>Wayfarer</td>
+              <td>Aviator/Pilot</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

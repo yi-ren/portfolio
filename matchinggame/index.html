@@ -1,0 +1,76 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Matching Game</title>
+<link href="_css/style.css" rel="stylesheet">
+<script src="_js/jquery-1.10.2.js"></script>
+<script src="_js/script.js"></script>
+</head>
+
+<body>
+<a href="#" id="start-button">
+<div id="start">
+<img src="_img/start.png"/>
+</div>
+</a>
+<div id="page-container">
+  <div id="side-bar">
+  <h2 id="title">Matching Game</h2>
+    <div id="matches-count"> 0 of 12 Matches </div>
+    <div id="attempts-count"> 0 Attempts </div>
+    <div id="instruction"> Click on any chip to start matching!
+    </div>
+    <div id="name">
+    <img src="_img/nameeraser.png"/>
+    </div>
+    <div id="pencil">
+    <img src="_img/pencil.png">
+    </div>
+  </div>
+  <div id="main">
+    <div id="status-bar">
+      <div id="chip-1"> Chip 1 </div>
+      <span id="timer"></span>
+      <div id="chip-2"> Chip 2 </div>
+    </div>
+    <div id="game-panel">
+    	<div data-content="TWO" data-value="2"></div>
+        <div data-content="10" data-value="10"></div>
+        <div data-content="EIGHT" data-value="8"></div>
+        <div data-content="1" data-value="1"></div>
+        <div data-content="SIX" data-value="6"></div>
+        <div data-content="4" data-value="4"></div>
+        <div data-content="THREE" data-value="3"></div>
+        <div data-content="6" data-value="6"></div>
+        <div data-content="TEN" data-value="10"></div>
+        <div data-content="2" data-value="2"></div>
+        <div data-content="FIVE" data-value="5"></div>
+        <div data-content="9" data-value="9"></div>
+        <div data-content="ONE" data-value="1"></div>
+        <div data-content="NINE" data-value="9"></div>
+        <div data-content="7" data-value="7"></div>
+        <div data-content="5" data-value="5"></div>
+        <div data-content="11" data-value="11"></div>
+        <div data-content="FOUR" data-value="4"></div>
+        <div data-content="TWELVE" data-value="12"></div>
+        <div data-content="3" data-value="3"></div>
+        <div data-content="ELEVEN" data-value="11"></div>
+        <div data-content="8" data-value="8"></div>
+        <div data-content="12" data-value="12"></div>
+        <div data-content="SEVEN" data-value="7"></div>
+    </div>
+  </div>
+</div>
+<div id="no-match" title="Fail" class="game-popup">
+  <p>No Match!</p>
+</div>
+<div id="match" title="Yay" class="game-popup">
+  <p>Match!</p>
+</div>
+<div id="win" title="Finally!" class="game-popup">
+  <p>Congrats! You made all 12 matches!</p>
+  
+</div>
+</body>
+</html>

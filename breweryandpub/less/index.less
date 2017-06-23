@@ -1,0 +1,140 @@
+@import "variables.less";
+
+.btn-group-vertical > .btn + .btn, .btn-group-vertical > .btn + .btn-group, .btn-group-vertical > .btn-group + .btn, .btn-group-vertical > .btn-group + .btn-group {
+
+    margin-left:auto;
+    margin-right:auto;
+
+}
+
+body{
+	padding-bottom:50px;
+	.fullwidth{
+        width:100%;
+	}
+	
+}
+
+.header-half {
+	
+	 &.beer{
+		background-image: url(../img/beer600600.jpg);
+		background-size:cover;
+		padding-right:0;
+        padding-left:0;
+	}
+	
+	&.pub{
+		background-image: url(../img/pub600600.jpg);
+		background-size:cover;
+		padding-left:0;
+        padding-right:0;
+	}
+    .visible-xs{
+        max-width: 400px;
+        margin-left:auto;
+        margin-right:auto;
+    }
+}
+
+.pub .btn-group-vertical {
+.transparent-pub;
+display:block;
+.btn{
+		
+			border:3px solid @pub;
+			color: @pub;
+	}
+}
+
+.beer .btn-group-vertical {
+
+    @media only screen and (max-width : 767px){
+        background-image:none;
+        padding:1em 0;
+        background-color: transparent;
+		.btn{
+			opacity:1;
+			background-color:#000;
+		}
+    }
+	padding: 8.69em 0;
+	background-image:url(../img/beerlogo.png);
+	background-repeat:no-repeat;
+	background-position:center;
+	background-size: 90% auto;
+ 	.transparent-beer;
+	display:block;
+	.btn{
+			border:3px solid @beer;
+			color: @beer;
+	}
+    
+}
+
+.pub .btn-group-vertical {
+    @media only screen and (max-width : 767px){
+        background-image:none;
+        padding:3em 0;
+        background-color: transparent;
+		.btn{
+			opacity:1;
+			background-color:#000;
+		}
+    }
+
+background-image:url(../img/publogo.png);
+	background-repeat:no-repeat;
+	background-position:center;
+	background-size: 90% auto;
+}
+.btn-group-vertical {
+	padding: 6em 0;
+	display: none;
+	height: 100%;
+	left: 0;
+	top: 0;
+	width: 100%;
+	.btn{
+        width:50%;
+        min-width:250px;
+		opacity:0;
+		padding: 10px;
+		border:3px solid transparent;
+		margin: 20px auto;
+		font-size:1.5em;
+		
+	}
+	&:hover{
+		background-color: transparent;
+		background-image:none;
+		.btn{
+			opacity:1;
+			background-color:#000;
+		}
+	}
+}
+
+.brothers-bio {
+	background-image: url(http://www.saveur.com/sites/saveur.com/files/images/2013-02/7-Mast-Brothers1-1800x1200.jpg);
+	background-size:cover;
+	background-position: center top;
+	min-height:400px;
+	margin-top: 20px;
+	color: #fff;
+	padding: 20px;
+	font-size:1.3em;
+	 img {
+	 margin-top:20px;
+	}
+	p,h1{
+		padding: 10px;
+		background-color: #000;
+	}
+	&:hover{
+		p,h1{
+			opacity:0.3;
+		}
+	}
+}
+

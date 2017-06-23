@@ -1,0 +1,51 @@
+.transparent {
+  background-color: #000000;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.transparent-beer {
+  background-color: #ff9700;
+  background-color: rgba(255, 151, 0, 0.4);
+}
+.transparent-pub {
+  background-color: #00c800;
+  background-color: rgba(0, 200, 0, 0.8);
+}
+.transparent-blue {
+  background-color: #2ad3ff;
+  background-color: rgba(42, 211, 255, 0.7);
+}
+html {
+  width: 100%;
+}
+body {
+  width: 100%;
+  overflow-x: hidden;
+  position: relative;
+  background: #fdfdfd;
+  /* Old browsers */
+
+  color: #fff;
+  font-family: 'Lato', sans-serif;
+  background-image: url(../img/mapBackground.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+body h1,
+body h2,
+body h3,
+body h4,
+body h5,
+body .nav {
+  font-family: 'Special Elite', cursive;
+}
+body .navbar-inverse {
+  border-bottom: none;
+  box-shadow: #000 0px 3px 10px;
+}
+body img {
+  width: 100%;
+}
+body * {
+  transition: all 0.5s;
+}

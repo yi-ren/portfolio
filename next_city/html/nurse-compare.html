@@ -1,0 +1,189 @@
+﻿<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="cache-control" content="no-cache" />
+<meta http-equiv="Expires" content="0" />
+<meta name="viewport" content="width=device-width" />
+<title>Next City</title>
+<!-- Bootstrap core CSS -->
+<link href="../css/third-party/bootstrap/bootstrap-3.1.1.min.css" rel="stylesheet" />
+<!-- site level CSS -->
+<link href='http://fonts.googleapis.com/css?family=Roboto:400,300,100' rel='stylesheet' type='text/css'>
+<!-- page level CSS -->
+<link rel="stylesheet" type="text/css" href="../css/location/ux-compare.css" />
+<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css" />
+
+<!-- Font Awesome core CSS (optional) -->
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="../css/third-party/7stroke/pe-icon-7-stroke.css">
+<link rel="stylesheet" href="../css/third-party/7stroke/helper.css">
+<link rel="stylesheet" href="http://cdn.jsdelivr.net/qtip2/2.2.1/jquery.qtip.min.css">
+<!--[if lt IE 9]>
+        <!-- Modernizr : Used to detect HTML5 and CSS3 features available in the browser -->
+    <script src="../js/third-party/modernizer/modernizr-2.7.1.js" type="text/javascript"></script>
+    <!-- Respond : Used to enable responsive designs in browsers that do not support CSS3 Media Queries -->
+    <script src="../js/third-party/bootstrap/respond.js" type="text/javascript"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+<div id="main">
+  <div id="row">
+    <div id="right">
+    	<div class="clearfix" id="top">
+        <h3 class="col-xs-12">Pick Your Top 5 Concerns</h3>
+        	<div class="col-xs-3" id="top5">
+            	
+                <div id="concerns-numbers">
+                    <div class="concerns-number">1</div>
+                    <div class="concerns-number">2</div>
+                    <div class="concerns-number">3</div>
+                    <div class="concerns-number">4</div>
+                    <div class="concerns-number">5</div>
+                </div>
+                <div id="outlines">
+                	<div class="outline"></div>
+                    <div class="outline"></div>
+                    <div class="outline"></div>
+                    <div class="outline"></div>
+                    <div class="outline"></div>
+                </div>
+            </div>
+            <div class="col-xs-9 keywords">
+            	<ul class="col-xs-3" id="jobs-keywords">
+                	<h4><i class="pe-7s-portfolio"></i> Jobs</h4>
+                	<li class="jobs-keywords" id="number_of_job_openings">Number of Jobs <i class="fa fa-plus pull-right pe-va"></i></li>
+                    <li class="jobs-keywords" id="medium_annual_income">Salary <i class="fa fa-plus pull-right pe-va"></i></li>
+                </ul>
+                <ul class="col-xs-3" id="living-keywords">
+                    <h4><i class="pe-7s-home"></i> Living</h4>
+                    <li class="living-keywords" id="rent_affordibility">Rent Affordibility <i class="fa fa-plus pull-right pe-va"></i></li>
+                    <li class="living-keywords" id="house_affordibility">House Affordibility <i class="fa fa-plus pull-right pe-va"></i></li>
+                    <li class="living-keywords" id="safety">Safety<i class="fa fa-plus pull-right pe-va"></i></li>
+                </ul>
+                <ul class="col-xs-3" id="connection-keywords">
+                    <h4><i class="pe-7s-users"></i> Connection</h4>
+                    <li class="connection-keywords" id="closeness_to_friends">Closeness To Friends <i class="fa fa-plus pull-right pe-va"></i></li>
+                    <li class="connection-keywords" id="number_of_trips_home_you_can_afford">Easier to Get Home <i class="fa fa-plus pull-right pe-va"></i></li>
+                </ul>
+                <ul class="col-xs-3" id="culture-keywords">
+                    <h4><i class="pe-7s-smile"></i> Culture</h4>
+                    <li class="culture-keywords" id="tripadvisor_reviews">Tourists' Favorite <i class="fa fa-plus pull-right pe-va"></i></li>
+                    <li class="culture-keywords" id="fun_score">More Fun <i class="fa fa-plus pull-right pe-va"></i></li>
+                    <li class="culture-keywords" id="serious_score">More Serious <i class="fa fa-plus pull-right pe-va"></i></li>
+                </ul>
+             </div>
+            
+        </div>
+        <div id="bars-container" class="clearfix">
+        <div id="bars-container-inner">
+    	<div id="newyork" class="clearfix city">
+        	<div class="city-name">New York, NY</div>
+        	<div class="firstbar bar"></div>
+            <div class="secondbar bar"></div>
+            <div class="thirdbar bar"></div>
+            <div class="forthbar bar"></div>
+            <div class="fifthbar bar"></div>
+        </div>
+        <div id="sf" class="clearfix city">
+        	<div class="city-name">San Fransico, CA</div>
+        	<div class="firstbar bar"></div>
+            <div class="secondbar bar"></div>
+            <div class="thirdbar bar"></div>
+            <div class="forthbar bar"></div>
+            <div class="fifthbar bar"></div>
+        </div>
+        <div id="seattle" class="clearfix city">
+        	<div class="city-name">Seattle, WA</div>
+        	<div class="firstbar bar"></div>
+            <div class="secondbar bar"></div>
+            <div class="thirdbar bar"></div>
+            <div class="forthbar bar"></div>
+            <div class="fifthbar bar"></div>
+        </div>
+        <div id="chicago" class="clearfix city">
+        	<div class="city-name">Chicago, IL</div>
+        	<div class="firstbar bar"></div>
+            <div class="secondbar bar"></div>
+            <div class="thirdbar bar"></div>
+            <div class="forthbar bar"></div>
+            <div class="fifthbar bar"></div>
+        </div>
+        <div id="boston" class="clearfix city">
+        	<div class="city-name">Boston, MA</div>
+        	<div class="firstbar bar"></div>
+            <div class="secondbar bar"></div>
+            <div class="thirdbar bar"></div>
+            <div class="forthbar bar"></div>
+            <div class="fifthbar bar"></div>
+        </div>
+        </div>
+        <div id="base-line" class="line"><div id="base-line-inner"></div></div>
+        <div id="middle-line" class="line"><div id="middle-line-inner"></div></div>
+        <div id="top-line" class="line"><div id="top-line-inner"></div></div>
+        </div>
+        <div class="clearfix" id="saved-cities">
+        	  <div class="col-xs-1"></div>
+              <div class="col-xs-2">
+              	<div class="thumbnail">
+                  <div class="img-container"> <img src="../img/location/newyork.jpg"> </div>
+                  <div class="caption">
+                    <h4>New York, NY</h4>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xs-2">
+                <div class="thumbnail">
+                  <div class="img-container"> <img src="../img/location/sf.jpg"> </div>
+                  <div class="caption">
+                    <h4>SF, CA</h4>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xs-2">
+              	<div class="thumbnail">
+                  <div class="img-container"> <img src="../img/location/seattle.jpg"> </div>
+                  <div class="caption">
+                    <h4>Seattle, WA</h4>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xs-2">
+              	<div class="thumbnail">
+                  <div class="img-container"> <img src="../img/location/chicago.jpg"> </div>
+                  <div class="caption">
+                    <h4>Chicago, IL</h4>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xs-2">
+              	<div class="thumbnail">
+                  <div class="img-container"> <img src="../img/location/boston.jpg"> </div>
+                  <div class="caption">
+                    <h4>Boston, MA</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+    </div>
+  </div>
+</div>
+         
+<script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+<script src="https://code.jquery.com/ui/1.11.3/jquery-ui.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+<script src="../js/third-party/currency/jquery.formatCurrency-1.4.0.min.js"></script>
+<script src="http://cdn.jsdelivr.net/qtip2/2.2.1/jquery.qtip.min.js"></script>
+<script src="../js/location/ux-cities.js"></script>
+<script src="../js/location/ux-compare.js"></script>
+</body>
+</html>
