@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="672px" height="544px" viewBox="0 0 672 544" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 40.2 (33826) - http://www.bohemiancoding.com/sketch -->
+    <title>grid</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M644,0 L28,0 C12.536027,0 -4.54747351e-13,12.536027 -4.54747351e-13,28 L-4.54747351e-13,516 C-6.82121026e-13,531.463973 12.536027,544 28,544 L644,544 C659.463973,544 672,531.463973 672,516 L672,28 C672,12.536027 659.463973,2.20268248e-13 644,0 L644,0 Z M640,257 L351,257 L351,32 L640,32 L640,257 Z M321,32 L321,257 L32,257 L32,32 L321,32 Z M32,287 L321,287 L321,512 L32,512 L32,287 Z M351,512 L351,287 L640,287 L640,512 L351,512 Z" id="grid" fill="#CCCCCB"></path>
+    </g>
+</svg>
